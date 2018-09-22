@@ -1,0 +1,214 @@
+\hypertarget{ensemble_8h}{}\section{include/ensemble.h File Reference}
+\label{ensemble_8h}\index{include/ensemble.\+h@{include/ensemble.\+h}}
+
+
+Implantation du T\+AD Ensemble.  
+
+
+{\ttfamily \#include \char`\"{}liste\+Chainee\+Mot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mot.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}
+\begin{DoxyCompactList}\small\item\em Le type \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} est une structure contenant les\+Elements (lien vers l\textquotesingle{}élément suivant) et le nombre d\textquotesingle{}éléments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element}
+\begin{DoxyCompactList}\small\item\em Le type E\+\_\+\+Element permet de représenter le type des éléments de \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} \hyperlink{ensemble_8h_afd55a1bf562aa2ae424064b382d9a0a1}{E\+\_\+\+Ensemble}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} \hyperlink{ensemble_8h_ab38fefba219682de25ef09dfdeb8c755}{E\+\_\+obtenir\+Les\+Elements} (\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} e)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le champe les\+Elements d\textquotesingle{}un ensemble. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{ensemble_8h_ae3f873bb6bdddc8851e65fdf764d0f44}{E\+\_\+obtenir\+Nb\+Element} (\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} e)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le nombre d\textquotesingle{}éléments d\textquotesingle{}un ensemble. \end{DoxyCompactList}\item 
+void \hyperlink{ensemble_8h_a64949525b17efdd2620c9f983084da00}{E\+\_\+fixer\+Les\+Elements} (\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} $\ast$e, \hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} liste\+Elements)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de fixer le champ les\+Elements de \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} à partir d\textquotesingle{}une liste chaînée en entrée. \end{DoxyCompactList}\item 
+\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} \hyperlink{ensemble_8h_a3283bb7c212c3a277133328442f20ea3}{E\+\_\+ensemble} ()
+\begin{DoxyCompactList}\small\item\em Fonction de création d\textquotesingle{}un ensemble. \end{DoxyCompactList}\item 
+void \hyperlink{ensemble_8h_a9d7eaf3cefa907106b3990381dd6bdcb}{E\+\_\+ajouter} (\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} $\ast$e, \hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element} el)
+\begin{DoxyCompactList}\small\item\em Procedure qui permet d\textquotesingle{}ajouter un élément (donné en entrée) dans un ensemble. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{ensemble_8h_a2414fb9cb4efbcdeaa8f50d6d5d113f3}{E\+\_\+cardinalite} (\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} e)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de connaître le nombre d\textquotesingle{}élément d\textquotesingle{}un ensemble. \end{DoxyCompactList}\item 
+int \hyperlink{ensemble_8h_aa0d7fcc27d24b57f3a8e2ae1ddd3fed6}{E\+\_\+est\+Present} (\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} e, \hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element} el)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si un élément est présent dans un ensemble. \end{DoxyCompactList}\item 
+void \hyperlink{ensemble_8h_a41ebae45910c866b2edfaa22035567ac}{E\+\_\+retirer} (\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} $\ast$e, \hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element} el)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de retirer un élément d\textquotesingle{}un ensemble. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implantation du T\+AD Ensemble. 
+
+\begin{DoxyAuthor}{Author}
+B\+O\+U\+T\+A\+Y\+EB Dounia, S\+A\+U\+R\+ON Thibault, S\+E\+S\+B\+OÜÉ Matthias, T\+O\+O\+M\+EY Damien 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/12/2017 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}\label{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+\+Element@{E\+\_\+\+Element}}
+\index{E\+\_\+\+Element@{E\+\_\+\+Element}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+\+Element}{E\_Element}}
+{\footnotesize\ttfamily \hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element}}
+
+
+
+Le type E\+\_\+\+Element permet de représenter le type des éléments de \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}. 
+
+\mbox{\Hypertarget{ensemble_8h_afd55a1bf562aa2ae424064b382d9a0a1}\label{ensemble_8h_afd55a1bf562aa2ae424064b382d9a0a1}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+\+Ensemble@{E\+\_\+\+Ensemble}}
+\index{E\+\_\+\+Ensemble@{E\+\_\+\+Ensemble}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+\+Ensemble}{E\_Ensemble}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}  \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ensemble_8h_a9d7eaf3cefa907106b3990381dd6bdcb}\label{ensemble_8h_a9d7eaf3cefa907106b3990381dd6bdcb}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+ajouter@{E\+\_\+ajouter}}
+\index{E\+\_\+ajouter@{E\+\_\+ajouter}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+ajouter()}{E\_ajouter()}}
+{\footnotesize\ttfamily void E\+\_\+ajouter (\begin{DoxyParamCaption}\item[{\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} $\ast$}]{e,  }\item[{\hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element}}]{el }\end{DoxyParamCaption})}
+
+
+
+Procedure qui permet d\textquotesingle{}ajouter un élément (donné en entrée) dans un ensemble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$e} & l\textquotesingle{}ensemble \\
+\hline
+{\em el} & l\textquotesingle{}élément donné en entrée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ensemble_8h_a2414fb9cb4efbcdeaa8f50d6d5d113f3}\label{ensemble_8h_a2414fb9cb4efbcdeaa8f50d6d5d113f3}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+cardinalite@{E\+\_\+cardinalite}}
+\index{E\+\_\+cardinalite@{E\+\_\+cardinalite}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+cardinalite()}{E\_cardinalite()}}
+{\footnotesize\ttfamily unsigned int E\+\_\+cardinalite (\begin{DoxyParamCaption}\item[{\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}}]{e }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de connaître le nombre d\textquotesingle{}élément d\textquotesingle{}un ensemble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & l\textquotesingle{}ensemble \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ensemble_8h_a3283bb7c212c3a277133328442f20ea3}\label{ensemble_8h_a3283bb7c212c3a277133328442f20ea3}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+ensemble@{E\+\_\+ensemble}}
+\index{E\+\_\+ensemble@{E\+\_\+ensemble}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+ensemble()}{E\_ensemble()}}
+{\footnotesize\ttfamily \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} E\+\_\+ensemble (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction de création d\textquotesingle{}un ensemble. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ensemble_8h_aa0d7fcc27d24b57f3a8e2ae1ddd3fed6}\label{ensemble_8h_aa0d7fcc27d24b57f3a8e2ae1ddd3fed6}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+est\+Present@{E\+\_\+est\+Present}}
+\index{E\+\_\+est\+Present@{E\+\_\+est\+Present}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+est\+Present()}{E\_estPresent()}}
+{\footnotesize\ttfamily int E\+\_\+est\+Present (\begin{DoxyParamCaption}\item[{\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}}]{e,  }\item[{\hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element}}]{el }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si un élément est présent dans un ensemble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & l\textquotesingle{}ensemble \\
+\hline
+{\em el} & l\textquotesingle{}élément \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ensemble_8h_a64949525b17efdd2620c9f983084da00}\label{ensemble_8h_a64949525b17efdd2620c9f983084da00}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+fixer\+Les\+Elements@{E\+\_\+fixer\+Les\+Elements}}
+\index{E\+\_\+fixer\+Les\+Elements@{E\+\_\+fixer\+Les\+Elements}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+fixer\+Les\+Elements()}{E\_fixerLesElements()}}
+{\footnotesize\ttfamily void E\+\_\+fixer\+Les\+Elements (\begin{DoxyParamCaption}\item[{\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} $\ast$}]{e,  }\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}]{liste\+Elements }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de fixer le champ les\+Elements de \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} à partir d\textquotesingle{}une liste chaînée en entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$e} & l\textquotesingle{}ensemble \\
+\hline
+{\em liste\+Elements} & la liste à fixer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ensemble_8h_ab38fefba219682de25ef09dfdeb8c755}\label{ensemble_8h_ab38fefba219682de25ef09dfdeb8c755}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+obtenir\+Les\+Elements@{E\+\_\+obtenir\+Les\+Elements}}
+\index{E\+\_\+obtenir\+Les\+Elements@{E\+\_\+obtenir\+Les\+Elements}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+obtenir\+Les\+Elements()}{E\_obtenirLesElements()}}
+{\footnotesize\ttfamily \hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} E\+\_\+obtenir\+Les\+Elements (\begin{DoxyParamCaption}\item[{\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}}]{e }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le champe les\+Elements d\textquotesingle{}un ensemble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & l\textquotesingle{}ensemble \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+C\+M\+\_\+\+Liste\+Chainee\+Mot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ensemble_8h_ae3f873bb6bdddc8851e65fdf764d0f44}\label{ensemble_8h_ae3f873bb6bdddc8851e65fdf764d0f44}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+obtenir\+Nb\+Element@{E\+\_\+obtenir\+Nb\+Element}}
+\index{E\+\_\+obtenir\+Nb\+Element@{E\+\_\+obtenir\+Nb\+Element}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+obtenir\+Nb\+Element()}{E\_obtenirNbElement()}}
+{\footnotesize\ttfamily unsigned int E\+\_\+obtenir\+Nb\+Element (\begin{DoxyParamCaption}\item[{\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble}}]{e }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le nombre d\textquotesingle{}éléments d\textquotesingle{}un ensemble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & l\textquotesingle{}ensemble \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ensemble_8h_a41ebae45910c866b2edfaa22035567ac}\label{ensemble_8h_a41ebae45910c866b2edfaa22035567ac}} 
+\index{ensemble.\+h@{ensemble.\+h}!E\+\_\+retirer@{E\+\_\+retirer}}
+\index{E\+\_\+retirer@{E\+\_\+retirer}!ensemble.\+h@{ensemble.\+h}}
+\subsubsection{\texorpdfstring{E\+\_\+retirer()}{E\_retirer()}}
+{\footnotesize\ttfamily void E\+\_\+retirer (\begin{DoxyParamCaption}\item[{\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} $\ast$}]{e,  }\item[{\hyperlink{ensemble_8h_a2face4a7b4a5c25b7a9fdeb31a0cb86c}{E\+\_\+\+Element}}]{el }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de retirer un élément d\textquotesingle{}un ensemble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$e} & l\textquotesingle{}ensembe \\
+\hline
+{\em el} & l\textquotesingle{}élément à retirer \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,105 @@
+\subsection{Choix possibles}
+
+Nous allons ici discuter de trois choix possibles que nous avons pour
+stocker les mots contenus dans le dictionnaire. Nous verrons les
+avantages et les inconvénients de ces différentes structures de donnée
+et nous finirons par expliquer notre choix final.
+
+\subsubsection{Tableau}
+
+Nous pourrions, très naïvement, choisir de stocker l'ensemble des mots
+du dictionnaire dans un tableau. \\
+Cette structure de donnée statique aurait pour seul avantage un accès
+aux mots en $\mathcal{O}$(1). \\
+En revanche pour ce qui est de ses désavantages ils sont nombreux :
+\begin{itemize}
+\item[.] Un tableau est une structure de donnée statique. Or nous
+  devons pouvoir insérer des mots facilement et donc faire varier la
+  taille de ce tableau. Dans le cas présent d'une structure de donnée
+  statique, nous devons choisir une taille maximum pour notre tableau
+  à la compilation, ce qui n'est absolument pas intéressant.
+\item[.] L'insertion d'un nouveau mot va aussi poser problème
+  puisqu'il faudra à chaque fois faire un décalage de tous les mots
+  qui sont situés après l'indice d'insertion, avant d'insérer le
+  mot.
+\item[.] Un autre problème réside dans la recherche d'un mot. En
+  effet dans le cas d'un tableau, la recherche naïve d'un mot sera en
+  $\mathcal{O}$(n) où n correspond au nombre de mot du dictionnaire, qui
+  sera donc très grand. Cette recherche ne sera par conséquent
+  absolument pas efficace. On pourrait l'améliorer en faisant une
+  recherche par dichotomie mais le fait que nous souhaitons stocker
+  des mots rend sont utilisation impossible dans notre cas.
+\end{itemize}
+
+\subsubsection{Arbre binaire de recherche}
+
+Nous pourrions choisir de stocker l'ensemble des mots à l'aide d'un
+arbre binaire de recherche. \\
+Cette structure de donnée dynamique présente deux gros avantages :
+
+\begin{itemize}
+\item[.] Un arbre binaire de recherche présente des caractéristiques
+  particulières qui permettent la recherche d'un élément en
+  $\mathcal{O}$(log(n)) ce qui est très intéressant dans notre cas
+  puisque nous allons devoir rechercher dans le dictionnaire si un mot
+  existe, et ce avec une contrainte de temps.
+\item[.] Cette structure de donnée est dynamique. Ceci implique que
+  nous pourrions faire varier la taille de notre arbre selon nos
+  besoins au cours de l'exécution du programme, ce qui est un avantage
+  important qui répond à un besoin de notre sujet.
+\end{itemize}
+
+Elle nécessiterait en revanche de quantifier chaque mot avec une
+valeur unique, ce qui reste faisable mais compliqué, et de mettre en
+place un moyen d'équilibrer l'arbre afin d'avoir des temps de recherche correct.
+
+\subsubsection{Arbre n-aire}
+
+Enfin, nous pourrions choisir de stocker nos mots grâce à un arbre n-aire. \\
+
+\begin{itemize}
+\item[.] Cette structure de donnée est aussi dynamique, en découle le
+  même avantage que pour l'arbre binaire de recherche.
+\item[.] L'arbre n-aire permettrait de stocker des lettres et non pas
+  des mots. Ainsi, un mot devient un chemin de parcours de
+  l'arbre. Par conséquent la recherche d'un mot se fait en $\mathcal{O}$(n)
+  où n est le nombre de lettres maximal des mots. Ce qui donnerai un
+  temps de recherche acceptable.
+\item[.] Un avantage de cet arbre est la place qu'occupe la structure:
+  comme les mots sont représentés par un chemin, on peut stocker par
+  exemple 'abc' et 'ab' avec seulement 3 noeuds, ce qui permet d'avoir
+  une structure de donnée nécessitant un espace mémoire relativement faible.
+\end{itemize}
+
+
+
+\subsubsection{Choix final}
+
+Pour les raisons d'optimisation présentées précédemment, nous ne
+choisirons pas un tableau. Pour ce qui est des arbres le choix est
+plus compliqué. Les deux types d'arbres sont intéressant et le choix
+s'est fait sur la complexité des algorithmes à développer. En effet
+dans le cas d'un arbre n-aire et dans celui d'un arbre binaire de
+recherche le temps moyen de recherche est environ le même.
+Dans l'arbre binaire de recherche, la hauteur d'un arbre est fonction
+du nombre de mots alors que pour l'arbre n-aire elle est fonction du nombre
+de lettres des mots. La hauteur maximum de celui-ci sera donc le nombre
+de lettres du plus grand mot. Ce qui nous donne pour un arbre binaire
+de recherche une taille de $\log_2(300000)=18.19$, soit une hauteur
+maximale de 19, avec une partie importante des mots qui sera située
+sur les feuilles de par la construction de l'arbre.\\
+Pour l'arbre n-aire, la taille maximale est plus grande
+(anticonstitutionnellement fait 25 lettres) mais en moyenne en France
+les mots font entre 6 et 7 caractères suivant les sources, donc la
+plupart des mots seront situés dans une hauteur de 7 environ. De plus
+nous n'avons pas besoin de parcourir tout le tableau pour savoir si un
+mot est mal orthographié.\\
+Là où l'arbre binaire de recherche devient un peu moins intéressant
+c'est lorsqu'il s'agit d'ajouter (ou de supprimer) un mot dans le
+dictionnaire. Dans la mesure où, pour assurer la complexité de
+recherche d'un élément en $\mathcal{O}$(log(n)), il faut s'assurer que
+l'arbre reste équilibré en faisant des rotations après chaque
+insertion, cela implique des algorithmes plus compliqués; en tout cas
+plus compliqués que pour l'arbre n-aire.
+Les performances des deux arbres ayant l'air à peu près équivalente
+nous choisirons celui qui sera plus simple à réaliser : l'arbre n-aire.

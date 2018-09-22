@@ -1,0 +1,106 @@
+\subsection{Conclusion générale}
+Ce projet était très intéressant. Le sujet du correcteur
+orthographique est concret et permet de voir des aspects particuliers
+d'un projet comme par exemple l'encodage des caractères. Il nous a
+ainsi permis d'apprendre le langage C, ainsi que le travail en équipe
+sur un problème informatique et dans des conditions réelles de projet
+en entreprise.\\
+\indent
+Nous sommes tout de même déçu car notre programme ne fonctionne qu'avec un dictionnaire sans accents (48843 mots) que nous avons trouvé sur internet (répertoire DicoSansAccents). Nous ne sommes pas parvenus à trouver le problème qui survient lorsque nous voulons construire notre SDD dictionnaire avec les mots du dictionnaire donné sur Moodle. Nous avons cherché et il nous semble que notre code est bon mais que nous avons des problèmes avec l'encodage latin-1.\\
+\indent
+Nous avons tenté de trouver le problème avec Valgrind et ddd mais nous n'y sommes pas parvenus. Lorsqu'on utilise le dictionnaire avec accents, en mettant la commande suivante : valgrind \texttt{-{}-}leak-check=full \texttt{-{}-}track-origins=yes ./bin/asispell -d ./bin/francais.dico -f ./DicoAvecAccents/dico-ref-ascii.txt, Valgrind dit entre autres : Uninitialised value was created by a stack allocation at 0x10B1F5: D\_insererMot  (dictionnaire.c:130). Nous pensons donc que l'erreur survient dans D\_insererMot mais pas avec plus de précision malheureusement.
+
+\subsection{Conclusions personnelles}
+
+\subsubsection{Dounia BOUTAYEB}
+Ce projet s'est révélé très enrichissant dans la mesure où il a
+consisté en une approche concrète du métier d'ingénieur. En effet, la
+prise d'initiative, le respect des délais et le travail en équipe
+seront des aspects essentiels de notre futur métier.
+De plus, il nous a permis d'appliquer nos connaissances acquises en
+cours et en travaux dirigés et à utiliser le langage C. Ce qui m'a
+aidé à mieux comprendre et à progresser.
+Malgré avoir eu quelques problèmes au début avec l'utilisation de la
+plateforme monprojet et TexMaker, j'ai pu m'investir dans le projet.
+
+\subsubsection{Thibault SAURON}
+J'ai beaucoup aimé travailler sur ce projet. Il m'a permis de me
+mettre dans une situation concrète de développement avec une équipe,
+un manager, des objectifs et une méthode précise. J'ai aussi pu
+répondre à beaucoup de questions que je me posais sur le développement
+d'un projet. Notamment le problème de gestion de versions que j'avais
+rencontré pendant le projet informatique en STPI2 ou produire
+quelque chose de réellement utile et que je pourrais réutiliser dans
+des projets futurs. J'ai aussi pu me familiariser avec de nouveaux outils
+comme \LaTeX\ et ddd qui me serons utiles plus tard.
+
+\subsubsection{Matthias SESBOÜÉ}
+Ce projet nous a permis de mettre en application ce que nous avons
+appris tout au long du semestre de manière très intéressante. En plus
+d'appliquer nos connaissances en programmation et en algorithmique, il
+nous a aussi permis de découvrir ce que c'est de travailler en groupe
+sur un projet informatique plus conséquent que celui sur lequel nous
+avions pu travailler en STPI. Enfin, nous avons découvert l'utilisation
+du git, outil indispensable pour travailler sur une projet
+informatique en équipe.
+En temps que chef de projet, j'ai beaucoup apprécié pouvoir "manager"
+une équipe dynamique constituée de personnes aux qualités et
+compétences variées. Ces dernières ont d'ailleurs entraîné des
+échanges intéressants, qui ont abouti à des choix concrets et
+efficaces en plus de permettre à chacun de progresser. Nous avons tous
+travaillé de façon plus ou moins régulière, avec chacun ses points
+forts et ses points faibles. Malgré quelques différences de niveau et
+d'investissement dans ce projet, je pense que nous nous sommes tous
+investi et avons mis un maximum de volonté dans sa réussite.
+
+\subsubsection{Damien TOOMEY}
+Ce projet m'a permis d'apprendre à utiliser le langage C. Je me suis
+rendu compte que le Pascal, enseigné en département STPI, est une
+étape nécessaire pour comprendre la base de la programmation car le C
+est un langage plus compliqué à manipuler. Ce projet m'a plu car
+contrairement aux conditions d'un examen théorique ou pratique, j'ai
+pu y consacrer tout le temps que je voulais. L'utilisation de la
+plateforme monprojet a facilité le développement du code. En revanche,
+je trouve que l'utilisation des demandes peut freiner la prise
+d'initiatives.
+
+\section{Répartition du travail}
+
+\subsection{Répartition générale}
+\begin{center}
+  \begin{tabular}{ c c c c c }
+    Tâches & BOUTAYEB & SAURON & SESBOÜÉ & TOOMEY \\
+           & Dounia & Thibault & Matthias & Damien \\
+    TAD Mot & X & - & X & - \\
+    TAD Dictionnaire & X & X & X & X \\
+    partie privée Dictionnaire & - & - & - & X \\
+    TAD CorrecteurOrthographique & - & - & X & - \\
+    partie privée CO & - & - & X & - \\
+    TAD arbre n-aire & - & X & - & - \\
+    TAD ListeChaineeMot & X & - & - & - \\
+    TAD Ensemble & - & - & X & - \\
+    partie privée Ensemble & - & - & X & - \\
+    programme principal & - & - & - & X \\
+    procédures d'affichage & - & - & - & X \\
+    ExisteFichier & - & - & - & X \\
+    Tests unitaires TAD Mot & - & - & - & X \\
+    Tests unitaires TAD Dictionnaire & - & X & - & - \\
+    Tests unitaires TAD CO & - & X & X & X \\
+    Tests unitaires TAD Arbre n-aire & - & X & - & - \\
+    Tests unitaires TAD LCMot & - & - & - & X \\
+    Tests unitaires TAD Ensemble & - & - & - & X \\
+  \end{tabular}
+\end{center}
+
+\subsection{Travaux communs}
+
+\begin{center}
+  \begin{tabular}{ c c c c c }
+    Tâches & BOUTAYEB & SAURON & SESBOÜÉ & TOOMEY \\
+           & Dounia & Thibault & Matthias & Damien \\
+    Rapport & X & X & X & X \\
+    Analyse descendante & X & X & X & X \\
+    D.estPresent & - & - & X & - \\
+    D.insererMot & - & - & X & X \\
+  \end{tabular}
+\end{center}

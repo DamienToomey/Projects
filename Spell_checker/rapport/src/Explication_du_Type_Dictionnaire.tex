@@ -1,0 +1,31 @@
+Notre dictionnaire est donc un arbre n-aire. Nous allons détailler son
+utilisation.\\
+Un arbre n-aire peut être visualisé comme un arbre binaire mais où
+seulement un seul fils fait 'descendre' dans la profondeur de l'arbre, on
+parle de fils et de frère. comme dans l'exemple qui suit:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=10cm, height=12cm]{images/arbrenillustration.png}
+  \caption{\label{étiquette} Un exemple d'arbre n-aire}
+\end{figure}
+
+Légende :
+\begin{itemize}
+\item[] Rouge : TAD Collection Arbre
+\item[] Noir : Conception à l'aide d'un Arbre Binaire\\
+\end{itemize}
+
+Dans notre dictionnaire, la racine n'est pas utilisée. Elle est ici présente
+car, par définition, la racine d'un arbre n-aire a un frère vide du
+point de vue de la conception. Ici le 'a' est le fils de la racine et
+le 't' est le frère de 'a'. L'intérêt de cette représentation est
+qu'un mot devient un chemin de fils en fils et de frères en
+frères. Pour savoir si un chemin est un mot valide, on rajoute un
+champs à chaque noeud de notre arbre, une variable booléenne
+'motValide' par exemple. Sur la figure ci-dessus, si notre arbre
+contient uniquement le mot 'yoyo', seulement le deuxième 'o' aura le
+champ 'motValide' à VRAI car 'y', 'yo' et 'yoy' ne sont pas des mots
+dans notre dictionnaire. Si on voulait ajouter le mot 'yoyos' il
+suffirait d'ajouter le fils 's' au deuxième 'o' et d'avoir les champs
+'motValide' à VRAI pour le deuxième 'o' et le 's'.

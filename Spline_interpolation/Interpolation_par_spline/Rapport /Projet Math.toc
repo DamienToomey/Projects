@@ -1,0 +1,45 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Formulation du probl\`{e}me}{6}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Point Historique}{6}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Les origines de l'interpolation}{6}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}L'interpolation par splines}{9}{subsubsection.1.2.2}
+\contentsline {section}{\numberline {2}Courbes de B\'{e}zier}{13}{section.2}
+\contentsline {subsection}{\numberline {2.1}Contexte}{13}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Formulation du probl\`{e}me}{16}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Partie Math\'{e}matique}{17}{subsection.2.3}
+\contentsline {section}{\numberline {3}Splines cubiques}{20}{section.3}
+\contentsline {subsection}{\numberline {3.1}Contexte}{20}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}R\'esolution math\'ematique}{22}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}M\'ethode de calcul}{27}{subsection.3.3}
+\contentsline {paragraph}{Algorithme de Thomas:}{28}{section*.2}
+\contentsline {paragraph}{Calcul de L et U:}{28}{section*.3}
+\contentsline {subsection}{\numberline {3.4}Exemple de calcul d'une fonction spline cubique}{31}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Pr\'esentation de l'outil informatique}{39}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Analyse descendante}{39}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Pr\'esentation du contenu du programme}{41}{subsubsection.3.5.2}
+\contentsline {section}{\numberline {4}B-splines}{44}{section.4}
+\contentsline {subsection}{\numberline {4.1}Contexte}{44}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Les bases des B-splines}{45}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Courbe de degr\'ee 3 (k=3)}{46}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Contr\^ole local}{48}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Autres propri\'et\'es}{48}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Pr\'esentation de l'outil informatique}{49}{subsection.4.6}
+\contentsline {section}{\numberline {5}Avantages et inconv\'{e}nients}{50}{section.5}
+\contentsline {subsection}{\numberline {5.1}Courbes de B\'{e}zier : avantages et inconv\'{e}nients}{50}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Splines cubiques : avantages et inconv\'{e}nients}{51}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}B-splines : avantages et inconv\'{e}nients}{51}{subsection.5.3}
+\contentsline {section}{\numberline {6}Exemples de fonctions}{53}{section.6}
+\contentsline {subsection}{\numberline {6.1}Fonction de Runge}{53}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Introduction}{53}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Exemple}{53}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Fonction Cosinus}{56}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Fonction Exponentielle}{57}{subsection.6.3}
+\contentsline {section}{\numberline {7}Applications des splines cubiques}{59}{section.7}
+\contentsline {subsection}{\numberline {7.1}Les splines dans la typographie et les logiciels de dessin}{60}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Les splines dans les transports : l'a\'eronautique et l'automobile}{62}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Les splines en chimie}{63}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Les splines et l'imagerie m\'edicale}{64}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Application de splines : le Taj Mahal}{65}{subsection.7.5}
+\contentsline {section}{\numberline {8}Conclusion}{66}{section.8}
+\contentsline {section}{\numberline {9}Cr\'{e}dits d'illustration}{67}{section.9}
+\contentsline {section}{\numberline {10}Bibliograpie}{69}{section.10}

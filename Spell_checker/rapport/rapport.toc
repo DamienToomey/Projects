@@ -1,0 +1,77 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}
+\contentsline {section}{\numberline {2}R\'esum\'e des s\'eances}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}D\'eroulement du projet}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Choix des conventions de nommage dans les .c et .h}{7}{subsection.2.2}
+\contentsline {section}{\numberline {3}Choix de la structure de donn\'ee du Dictionnaire}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Choix possibles}{9}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Tableau}{9}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Arbre binaire de recherche}{9}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Arbre n-aire}{10}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Choix final}{10}{subsubsection.3.1.4}
+\contentsline {section}{\numberline {4}Explication du Type Dictionnaire}{11}{section.4}
+\contentsline {section}{\numberline {5}Analyse}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Types Abstraits de Donn\'ees (TAD)}{13}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}TAD Mot}{13}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}TAD Dictionnaire}{13}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}TAD CorrecteurOrthographique}{14}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}TAD Arbre n-aire}{14}{subsubsection.5.1.4}
+\contentsline {subsection}{\numberline {5.2}Analyse descendante}{16}{subsection.5.2}
+\contentsline {section}{\numberline {6}Conception pr\'eliminaire}{21}{section.6}
+\contentsline {subsection}{\numberline {6.1}Signatures li\'ees au TAD Mot}{21}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Signatures li\'ees au TAD Dictionnaire}{21}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Signatures li\'ees au TAD CorrecteurOrthographique}{22}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Signatures li\'ees au TAD Arbre n-aire}{22}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Signatures des proc\'edures d'affichage}{23}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Signatures des proc\'edures priv\'ees du main}{23}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Signatures li\'ees au TAD Fichier Texte donn\'e dans le sujet}{23}{subsection.6.7}
+\contentsline {section}{\numberline {7}Conception d\'etaill\'ee}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}Fonctions et proc\'edures li\'ees au TAD Mot}{25}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Partie Priv\'ee}{25}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Partie Publique}{25}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.2}Fonctions et proc\'edures li\'ees au TAD Dictionnaire}{28}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Partie Priv\'ee}{28}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Partie publique}{30}{subsubsection.7.2.2}
+\contentsline {subsection}{\numberline {7.3}Fonctions et proc\'edures li\'ees au TAD CorrecteurOrthographique}{32}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Partie priv\'ee}{32}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Partie Publique}{33}{subsubsection.7.3.2}
+\contentsline {subsection}{\numberline {7.4}Fonctions et proc\'edures li\'ees au TAD ArbreN}{35}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Proc\'edures d'affichage}{37}{subsection.7.5}
+\contentsline {subsubsection}{\numberline {7.5.1}Partie priv\'ee}{37}{subsubsection.7.5.1}
+\contentsline {subsubsection}{\numberline {7.5.2}Partie publique}{37}{subsubsection.7.5.2}
+\contentsline {subsection}{\numberline {7.6}Proc\'edures priv\'ees du main}{38}{subsection.7.6}
+\contentsline {section}{\numberline {8}Code C}{40}{section.8}
+\contentsline {subsection}{\numberline {8.1}mot.h}{40}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}mot.c}{41}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}dictionnaire.h}{44}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}dictionnaire.c}{45}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}correcteurOrthographique.h}{50}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}correcteurOrthographique.c}{51}{subsection.8.6}
+\contentsline {subsection}{\numberline {8.7}arbreN.h}{54}{subsection.8.7}
+\contentsline {subsection}{\numberline {8.8}arbreN.c}{56}{subsection.8.8}
+\contentsline {subsection}{\numberline {8.9}ensemble.h}{57}{subsection.8.9}
+\contentsline {subsection}{\numberline {8.10}ensemble.c}{58}{subsection.8.10}
+\contentsline {subsection}{\numberline {8.11}listeChaineeMot.h}{60}{subsection.8.11}
+\contentsline {subsection}{\numberline {8.12}listeChaineeMot.c}{62}{subsection.8.12}
+\contentsline {subsection}{\numberline {8.13}affichages.h}{63}{subsection.8.13}
+\contentsline {subsection}{\numberline {8.14}affichages.c}{64}{subsection.8.14}
+\contentsline {subsection}{\numberline {8.15}existeFichier.h}{65}{subsection.8.15}
+\contentsline {subsection}{\numberline {8.16}existeFichier.c}{65}{subsection.8.16}
+\contentsline {subsection}{\numberline {8.17}main.c}{66}{subsection.8.17}
+\contentsline {section}{\numberline {9}Tests unitaires}{70}{section.9}
+\contentsline {subsection}{\numberline {9.1}motTU.c}{70}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}dictionnaireTU.c}{78}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}correcteurOrthographiqueTU.c}{84}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}arbreNTU.c}{92}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}ensembleTU.c}{98}{subsection.9.5}
+\contentsline {subsection}{\numberline {9.6}listeChaineeMotTU.c}{105}{subsection.9.6}
+\contentsline {section}{\numberline {10}Conclusion}{112}{section.10}
+\contentsline {subsection}{\numberline {10.1}Conclusion g\'en\'erale}{112}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Conclusions personnelles}{112}{subsection.10.2}
+\contentsline {subsubsection}{\numberline {10.2.1}Dounia BOUTAYEB}{112}{subsubsection.10.2.1}
+\contentsline {subsubsection}{\numberline {10.2.2}Thibault SAURON}{112}{subsubsection.10.2.2}
+\contentsline {subsubsection}{\numberline {10.2.3}Matthias SESBO\"U\'E}{112}{subsubsection.10.2.3}
+\contentsline {subsubsection}{\numberline {10.2.4}Damien TOOMEY}{113}{subsubsection.10.2.4}
+\contentsline {section}{\numberline {11}R\'epartition du travail}{114}{section.11}
+\contentsline {subsection}{\numberline {11.1}R\'epartition g\'en\'erale}{114}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Travaux communs}{114}{subsection.11.2}

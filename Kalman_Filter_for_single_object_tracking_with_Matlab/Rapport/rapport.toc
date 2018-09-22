@@ -1,0 +1,32 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}\IeC {\'E}tude bibliographique sur le mod\IeC {\`e}le}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Pr\IeC {\'e}sentation}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Origine}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Fonctionnement}{3}{subsection.1.3}
+\contentsline {paragraph}{Mod\IeC {\`e}les du filtre}{4}{section*.2}
+\contentsline {paragraph}{Distributions des \IeC {\'e}tats et des observations}{4}{section*.3}
+\contentsline {paragraph}{Pr\IeC {\'e}diction}{4}{section*.4}
+\contentsline {paragraph}{Mise \IeC {\`a} jour}{4}{section*.5}
+\contentsline {paragraph}{D\IeC {\'e}tail des matrices et vecteurs}{5}{section*.6}
+\contentsline {section}{\numberline {2}\IeC {\'E}tude bibliographique sur l'application}{6}{section.2}
+\contentsline {paragraph}{}{6}{section*.7}
+\contentsline {section}{\numberline {3}Pr\IeC {\'e}sentation du jeu de donn\IeC {\'e}es choisi ou construit}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Vid\IeC {\'e}o 1 : \emph {singleball.mp4}}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Vid\IeC {\'e}o 2 : \emph {singleballhomemade.mp4}}{7}{subsection.3.2}
+\contentsline {paragraph}{}{7}{section*.8}
+\contentsline {section}{\numberline {4}Explication de l'impl\IeC {\'e}mentation}{9}{section.4}
+\contentsline {paragraph}{}{9}{section*.9}
+\contentsline {subsection}{\numberline {4.1}Traitement d'image}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Filtre de Kalman}{15}{subsection.4.2}
+\contentsline {section}{\numberline {5}Choix des hyper-param\IeC {\`e}tres}{20}{section.5}
+\contentsline {paragraph}{}{20}{section*.10}
+\contentsline {section}{\numberline {6}R\IeC {\'e}sultats et interpr\IeC {\'e}tations \--- singleball.mp4}{21}{section.6}
+\contentsline {subsection}{\numberline {6.1}R\IeC {\'e}sultats avec $ dt = 1.2 \tmspace +\thickmuskip {.2777em} s $}{21}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}R\IeC {\'e}sultats avec $ dt = 1/30 \tmspace +\thickmuskip {.2777em} s $ et ajustements de la vitesse et de l'acc\IeC {\'e}l\IeC {\'e}ration}{23}{subsection.6.2}
+\contentsline {section}{\numberline {7}Bibliographie}{25}{section.7}
+\contentsline {section}{\numberline {8}Annexes}{26}{section.8}
+\contentsline {subsection}{\numberline {8.1}ProjetTSA.m}{26}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}trackingObjet.m}{32}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}kalmanFilter.m}{33}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}kalmanFilterAjustementsVitesseAcceleration.m}{34}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}kalmanFilterForTracking.m}{36}{subsection.8.5}

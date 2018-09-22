@@ -1,0 +1,186 @@
+\hypertarget{correcteur_orthographique_8h}{}\section{include/correcteur\+Orthographique.h File Reference}
+\label{correcteur_orthographique_8h}\index{include/correcteur\+Orthographique.\+h@{include/correcteur\+Orthographique.\+h}}
+
+
+Implantation du T\+AD Correcteur\+Orthographique.  
+
+
+{\ttfamily \#include \char`\"{}liste\+Chainee\+Mot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ensemble.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dictionnaire.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}
+\begin{DoxyCompactList}\small\item\em Définition du type \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} qui est une structure contenant un mot et un dictionnaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} \hyperlink{correcteur_orthographique_8h_abb17bd96a46ba1bdd02cd2c69c3204bb}{C\+O\+\_\+\+Correcteur\+Orthographique}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} \hyperlink{correcteur_orthographique_8h_aeb1a45f252ada313b5e9294e9f6f98d1}{C\+O\+\_\+correcteur\+Orthographique} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant de créer une variable de type \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}. \end{DoxyCompactList}\item 
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{correcteur_orthographique_8h_adf5f9112dc2ee765852b2650c4f87815}{C\+O\+\_\+obtenir\+Mot} (\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} co)
+\begin{DoxyCompactList}\small\item\em Fonction accesseur permettant d\textquotesingle{}obtenir le mot contenu dans la variable de type \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}. \end{DoxyCompactList}\item 
+\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} \hyperlink{correcteur_orthographique_8h_a66f02ef083d6611addc07d5bf7d6dcda}{C\+O\+\_\+obtenir\+Dictionnaire} (\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} co)
+\begin{DoxyCompactList}\small\item\em Fonction accesseur permettant d\textquotesingle{}obtenir le dictionnaire contenu dans la variable de type \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}. \end{DoxyCompactList}\item 
+void \hyperlink{correcteur_orthographique_8h_ac00e4da13683d0eead324dbe421311c0}{C\+O\+\_\+fixer\+Dictionnaire} (\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} $\ast$co, \hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} dico)
+\begin{DoxyCompactList}\small\item\em Procédure permettant de fixer le champ dico de co avec un dictionnaire dico donné en entrée. \end{DoxyCompactList}\item 
+void \hyperlink{correcteur_orthographique_8h_a097d5397ac3a965a40712112886b94b5}{C\+O\+\_\+fixer\+Mot} (\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} $\ast$co, \hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot)
+\begin{DoxyCompactList}\small\item\em Procédure permettant de fixer le champ mot de co avec un mot donné entrée. \end{DoxyCompactList}\item 
+\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} \hyperlink{correcteur_orthographique_8h_adf7340720048a1faa8a39c9f14f08592}{C\+O\+\_\+proposer\+Corrections} (\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} co)
+\begin{DoxyCompactList}\small\item\em Fonction retournant l\textquotesingle{}ensemble des corrections possibles d\textquotesingle{}un mot. \end{DoxyCompactList}\item 
+int \hyperlink{correcteur_orthographique_8h_a33b91c96c0cdb3c98fe68dd5b37e04c1}{C\+O\+\_\+est\+Bien\+Orthographie} (\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} co)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir si un mot est présent dans un dictionnaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implantation du T\+AD Correcteur\+Orthographique. 
+
+\begin{DoxyAuthor}{Author}
+B\+O\+U\+T\+A\+Y\+EB Dounia, S\+A\+U\+R\+ON Thibault, S\+E\+S\+B\+OÜÉ Matthias, T\+O\+O\+M\+EY Damien 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3/12/2017 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{correcteur_orthographique_8h_abb17bd96a46ba1bdd02cd2c69c3204bb}\label{correcteur_orthographique_8h_abb17bd96a46ba1bdd02cd2c69c3204bb}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+\+Correcteur\+Orthographique@{C\+O\+\_\+\+Correcteur\+Orthographique}}
+\index{C\+O\+\_\+\+Correcteur\+Orthographique@{C\+O\+\_\+\+Correcteur\+Orthographique}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+\+Correcteur\+Orthographique}{CO\_CorrecteurOrthographique}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}  \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{correcteur_orthographique_8h_aeb1a45f252ada313b5e9294e9f6f98d1}\label{correcteur_orthographique_8h_aeb1a45f252ada313b5e9294e9f6f98d1}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+correcteur\+Orthographique@{C\+O\+\_\+correcteur\+Orthographique}}
+\index{C\+O\+\_\+correcteur\+Orthographique@{C\+O\+\_\+correcteur\+Orthographique}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+correcteur\+Orthographique()}{CO\_correcteurOrthographique()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} C\+O\+\_\+correcteur\+Orthographique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de créer une variable de type \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{correcteur_orthographique_8h_a33b91c96c0cdb3c98fe68dd5b37e04c1}\label{correcteur_orthographique_8h_a33b91c96c0cdb3c98fe68dd5b37e04c1}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+est\+Bien\+Orthographie@{C\+O\+\_\+est\+Bien\+Orthographie}}
+\index{C\+O\+\_\+est\+Bien\+Orthographie@{C\+O\+\_\+est\+Bien\+Orthographie}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+est\+Bien\+Orthographie()}{CO\_estBienOrthographie()}}
+{\footnotesize\ttfamily int C\+O\+\_\+est\+Bien\+Orthographie (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}}]{co }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir si un mot est présent dans un dictionnaire. 
+
+et donc de savoir s\textquotesingle{}il est bien orthographié ou non. 
+\begin{DoxyParams}{Parameters}
+{\em co} & un correcteur orhtographique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{correcteur_orthographique_8h_ac00e4da13683d0eead324dbe421311c0}\label{correcteur_orthographique_8h_ac00e4da13683d0eead324dbe421311c0}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+fixer\+Dictionnaire@{C\+O\+\_\+fixer\+Dictionnaire}}
+\index{C\+O\+\_\+fixer\+Dictionnaire@{C\+O\+\_\+fixer\+Dictionnaire}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+fixer\+Dictionnaire()}{CO\_fixerDictionnaire()}}
+{\footnotesize\ttfamily void C\+O\+\_\+fixer\+Dictionnaire (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} $\ast$}]{co,  }\item[{\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire}}]{dico }\end{DoxyParamCaption})}
+
+
+
+Procédure permettant de fixer le champ dico de co avec un dictionnaire dico donné en entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$co} & un correcteur orthographique \\
+\hline
+{\em dico} & un dictionnaire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{correcteur_orthographique_8h_a097d5397ac3a965a40712112886b94b5}\label{correcteur_orthographique_8h_a097d5397ac3a965a40712112886b94b5}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+fixer\+Mot@{C\+O\+\_\+fixer\+Mot}}
+\index{C\+O\+\_\+fixer\+Mot@{C\+O\+\_\+fixer\+Mot}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+fixer\+Mot()}{CO\_fixerMot()}}
+{\footnotesize\ttfamily void C\+O\+\_\+fixer\+Mot (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique} $\ast$}]{co,  }\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+
+
+Procédure permettant de fixer le champ mot de co avec un mot donné entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$co} & un correcteur orthographique \\
+\hline
+{\em mot} & le mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{correcteur_orthographique_8h_a66f02ef083d6611addc07d5bf7d6dcda}\label{correcteur_orthographique_8h_a66f02ef083d6611addc07d5bf7d6dcda}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+obtenir\+Dictionnaire@{C\+O\+\_\+obtenir\+Dictionnaire}}
+\index{C\+O\+\_\+obtenir\+Dictionnaire@{C\+O\+\_\+obtenir\+Dictionnaire}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+obtenir\+Dictionnaire()}{CO\_obtenirDictionnaire()}}
+{\footnotesize\ttfamily \hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} C\+O\+\_\+obtenir\+Dictionnaire (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}}]{co }\end{DoxyParamCaption})}
+
+
+
+Fonction accesseur permettant d\textquotesingle{}obtenir le dictionnaire contenu dans la variable de type \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em co} & un correcteur orhtographique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\+\_\+\+Dictionnaire 
+\end{DoxyReturn}
+\mbox{\Hypertarget{correcteur_orthographique_8h_adf5f9112dc2ee765852b2650c4f87815}\label{correcteur_orthographique_8h_adf5f9112dc2ee765852b2650c4f87815}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+obtenir\+Mot@{C\+O\+\_\+obtenir\+Mot}}
+\index{C\+O\+\_\+obtenir\+Mot@{C\+O\+\_\+obtenir\+Mot}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+obtenir\+Mot()}{CO\_obtenirMot()}}
+{\footnotesize\ttfamily \hyperlink{struct_m___mot}{M\+\_\+\+Mot} C\+O\+\_\+obtenir\+Mot (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}}]{co }\end{DoxyParamCaption})}
+
+
+
+Fonction accesseur permettant d\textquotesingle{}obtenir le mot contenu dans la variable de type \hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em co} & un correcteur orhtographique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{correcteur_orthographique_8h_adf7340720048a1faa8a39c9f14f08592}\label{correcteur_orthographique_8h_adf7340720048a1faa8a39c9f14f08592}} 
+\index{correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}!C\+O\+\_\+proposer\+Corrections@{C\+O\+\_\+proposer\+Corrections}}
+\index{C\+O\+\_\+proposer\+Corrections@{C\+O\+\_\+proposer\+Corrections}!correcteur\+Orthographique.\+h@{correcteur\+Orthographique.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+\_\+proposer\+Corrections()}{CO\_proposerCorrections()}}
+{\footnotesize\ttfamily \hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} C\+O\+\_\+proposer\+Corrections (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_o___correcteur_orthographique}{C\+O\+\_\+\+Correcteur\+Orthographique}}]{co }\end{DoxyParamCaption})}
+
+
+
+Fonction retournant l\textquotesingle{}ensemble des corrections possibles d\textquotesingle{}un mot. 
+
+\begin{DoxyPrecond}{Precondition}
+assert(!(C\+O\+\_\+est\+Bien\+Orthographie(co))) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$co} & un correcteur orthographique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_e___ensemble}{E\+\_\+\+Ensemble} 
+\end{DoxyReturn}

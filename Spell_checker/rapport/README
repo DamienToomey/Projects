@@ -1,0 +1,9 @@
+ASIspell
+Correcteur Orthographique
+------------------------------------------------------------------------------
+Commandes du makefile à faire dans le terminal à partir du répertoire courant :
+make rapport : génère le pdf à partir du latex
+make all : génère le pdf à partir du latex
+make clean : supprime tout ce qui a été généré par les commandes citées au-dessus
+------------------------------------------------------------------------------
+

@@ -1,0 +1,252 @@
+\hypertarget{arbre_n_8h}{}\section{include/arbreN.h File Reference}
+\label{arbre_n_8h}\index{include/arbre\+N.\+h@{include/arbre\+N.\+h}}
+
+
+Implantation des fonctions et procédures d\textquotesingle{}arbre N-\/aire.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_ab_n___noeud}{Ab\+N\+\_\+\+Noeud}
+\begin{DoxyCompactList}\small\item\em Définition du type \hyperlink{struct_ab_n___noeud}{Ab\+N\+\_\+\+Noeud} qui est une structure contenant une lettre, un booleen pour indiquer si on est arrivé à la fin du mot, le fils et le frère du noeud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_ab_n___noeud}{Ab\+N\+\_\+\+Noeud} $\ast$ \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}
+\begin{DoxyCompactList}\small\item\em Définition du type Ab\+N\+\_\+\+ArbreN qui est un pointeur sur la structure noeud. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_ab_n___noeud}{Ab\+N\+\_\+\+Noeud} \hyperlink{arbre_n_8h_a9b32585ce578b4b827b4dab1ace65af8}{Ab\+N\+\_\+\+Noeud}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} \hyperlink{arbre_n_8h_a325bea8d96c21b9715f69feebb09dda1}{Ab\+N\+\_\+creer\+Arbre\+Non\+Init} ()
+\begin{DoxyCompactList}\small\item\em Crée un arbre non initialisé et l\textquotesingle{}assigne à une variable. \end{DoxyCompactList}\item 
+int \hyperlink{arbre_n_8h_af290377e5f3c813c5e725ce40162d3e6}{Ab\+N\+\_\+est\+Vide} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} arbre)
+\begin{DoxyCompactList}\small\item\em Permet de savoir si un arbre est vide ou non. \end{DoxyCompactList}\item 
+int \hyperlink{arbre_n_8h_afcb8fcb8d56af87816cc2e2b313e6119}{Ab\+N\+\_\+obtenir\+Bool} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} arbre)
+\begin{DoxyCompactList}\small\item\em Accesseur peemettant d\textquotesingle{}acceder au champ mot\+Valide de la structure. \end{DoxyCompactList}\item 
+char \hyperlink{arbre_n_8h_acdc198fd92fcc1da585798225d543305}{Ab\+N\+\_\+obtenir\+Char} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} arbre)
+\begin{DoxyCompactList}\small\item\em Accesseur permettant d\textquotesingle{}acceder au champ lettre de la structure. \end{DoxyCompactList}\item 
+void \hyperlink{arbre_n_8h_a1b9c6daf8342286ae62ba5c6fa742dcf}{Ab\+N\+\_\+fixer\+Bool} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$arbre, int valide)
+\begin{DoxyCompactList}\small\item\em Procédure permettant de fixer le champ mot\+Valide de la structure. \end{DoxyCompactList}\item 
+void \hyperlink{arbre_n_8h_a3f39a8bde532e3a0275c74061af23c1c}{Ab\+N\+\_\+fixer\+Char} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$arbre, char lalettre)
+\begin{DoxyCompactList}\small\item\em Procédure permettant de fixer le champ lettre de la structure. \end{DoxyCompactList}\item 
+\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} \hyperlink{arbre_n_8h_aa658270c22ee9c09df4332c2e2867c46}{Ab\+N\+\_\+obtenir\+Fils} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} arbre)
+\begin{DoxyCompactList}\small\item\em Permet de se déplacer vers le fils de l\textquotesingle{}arbre en entrée. \end{DoxyCompactList}\item 
+\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} \hyperlink{arbre_n_8h_a16697bf0a1224210256b0a5b05a0baa6}{Ab\+N\+\_\+obtenir\+Frere} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} arbre)
+\item 
+void \hyperlink{arbre_n_8h_abdb9cf807741a4040efc5a4490d6fdb1}{Ab\+N\+\_\+fixer\+Fils} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$arbre, \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} fils)
+\begin{DoxyCompactList}\small\item\em Permet de fixer un fils à l\textquotesingle{}arbre courant. \end{DoxyCompactList}\item 
+void \hyperlink{arbre_n_8h_a4c396ebbc1cd7891f0c921470e01e2c5}{Ab\+N\+\_\+fixer\+Frere} (\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$arbre, \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} frere)
+\begin{DoxyCompactList}\small\item\em Permet de fixer un frère à l\textquotesingle{}arbre courant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implantation des fonctions et procédures d\textquotesingle{}arbre N-\/aire. 
+
+\begin{DoxyAuthor}{Author}
+B\+O\+U\+T\+A\+Y\+EB Dounia, S\+A\+U\+R\+ON Thibault, S\+E\+S\+B\+OÜÉ Matthias, T\+O\+O\+M\+EY Damien 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24/12/2017 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}\label{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+\+ArbreN@{Ab\+N\+\_\+\+ArbreN}}
+\index{Ab\+N\+\_\+\+ArbreN@{Ab\+N\+\_\+\+ArbreN}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+\+ArbreN}{AbN\_ArbreN}}
+{\footnotesize\ttfamily \hyperlink{struct_ab_n___noeud}{Ab\+N\+\_\+\+Noeud} $\ast$ \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}
+
+
+
+Définition du type Ab\+N\+\_\+\+ArbreN qui est un pointeur sur la structure noeud. 
+
+\mbox{\Hypertarget{arbre_n_8h_a9b32585ce578b4b827b4dab1ace65af8}\label{arbre_n_8h_a9b32585ce578b4b827b4dab1ace65af8}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+\+Noeud@{Ab\+N\+\_\+\+Noeud}}
+\index{Ab\+N\+\_\+\+Noeud@{Ab\+N\+\_\+\+Noeud}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+\+Noeud}{AbN\_Noeud}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_ab_n___noeud}{Ab\+N\+\_\+\+Noeud}  \hyperlink{struct_ab_n___noeud}{Ab\+N\+\_\+\+Noeud}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{arbre_n_8h_a325bea8d96c21b9715f69feebb09dda1}\label{arbre_n_8h_a325bea8d96c21b9715f69feebb09dda1}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+creer\+Arbre\+Non\+Init@{Ab\+N\+\_\+creer\+Arbre\+Non\+Init}}
+\index{Ab\+N\+\_\+creer\+Arbre\+Non\+Init@{Ab\+N\+\_\+creer\+Arbre\+Non\+Init}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+creer\+Arbre\+Non\+Init()}{AbN\_creerArbreNonInit()}}
+{\footnotesize\ttfamily \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} Ab\+N\+\_\+creer\+Arbre\+Non\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crée un arbre non initialisé et l\textquotesingle{}assigne à une variable. 
+
+\begin{DoxyReturn}{Returns}
+Ab\+N\+\_\+\+ArbreN 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_n_8h_af290377e5f3c813c5e725ce40162d3e6}\label{arbre_n_8h_af290377e5f3c813c5e725ce40162d3e6}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+est\+Vide@{Ab\+N\+\_\+est\+Vide}}
+\index{Ab\+N\+\_\+est\+Vide@{Ab\+N\+\_\+est\+Vide}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+est\+Vide()}{AbN\_estVide()}}
+{\footnotesize\ttfamily int Ab\+N\+\_\+est\+Vide (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Permet de savoir si un arbre est vide ou non. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & un arbre N-\/aire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_n_8h_a1b9c6daf8342286ae62ba5c6fa742dcf}\label{arbre_n_8h_a1b9c6daf8342286ae62ba5c6fa742dcf}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+fixer\+Bool@{Ab\+N\+\_\+fixer\+Bool}}
+\index{Ab\+N\+\_\+fixer\+Bool@{Ab\+N\+\_\+fixer\+Bool}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+fixer\+Bool()}{AbN\_fixerBool()}}
+{\footnotesize\ttfamily void Ab\+N\+\_\+fixer\+Bool (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$}]{arbre,  }\item[{int}]{valide }\end{DoxyParamCaption})}
+
+
+
+Procédure permettant de fixer le champ mot\+Valide de la structure. 
+
+\begin{DoxyPrecond}{Precondition}
+assert(!\+Ab\+N\+\_\+est\+Vide($\ast$arbre)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & un arbre N-\/aire \\
+\hline
+{\em valide} & le booleen du noeud qui permet de savoir si on est arrivé à la fin du mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{arbre_n_8h_a3f39a8bde532e3a0275c74061af23c1c}\label{arbre_n_8h_a3f39a8bde532e3a0275c74061af23c1c}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+fixer\+Char@{Ab\+N\+\_\+fixer\+Char}}
+\index{Ab\+N\+\_\+fixer\+Char@{Ab\+N\+\_\+fixer\+Char}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+fixer\+Char()}{AbN\_fixerChar()}}
+{\footnotesize\ttfamily void Ab\+N\+\_\+fixer\+Char (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$}]{arbre,  }\item[{char}]{lalettre }\end{DoxyParamCaption})}
+
+
+
+Procédure permettant de fixer le champ lettre de la structure. 
+
+\begin{DoxyPrecond}{Precondition}
+assert(!\+Ab\+N\+\_\+est\+Vide($\ast$arbre)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$arbre} & un arbre N-\/aire \\
+\hline
+{\em lalettre} & la lettre du noeud \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{arbre_n_8h_abdb9cf807741a4040efc5a4490d6fdb1}\label{arbre_n_8h_abdb9cf807741a4040efc5a4490d6fdb1}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+fixer\+Fils@{Ab\+N\+\_\+fixer\+Fils}}
+\index{Ab\+N\+\_\+fixer\+Fils@{Ab\+N\+\_\+fixer\+Fils}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+fixer\+Fils()}{AbN\_fixerFils()}}
+{\footnotesize\ttfamily void Ab\+N\+\_\+fixer\+Fils (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$}]{arbre,  }\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}]{fils }\end{DoxyParamCaption})}
+
+
+
+Permet de fixer un fils à l\textquotesingle{}arbre courant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$arbre} & un arbre N-\/aire \\
+\hline
+{\em fils} & fils qu\textquotesingle{}on veut fixer à l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{arbre_n_8h_a4c396ebbc1cd7891f0c921470e01e2c5}\label{arbre_n_8h_a4c396ebbc1cd7891f0c921470e01e2c5}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+fixer\+Frere@{Ab\+N\+\_\+fixer\+Frere}}
+\index{Ab\+N\+\_\+fixer\+Frere@{Ab\+N\+\_\+fixer\+Frere}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+fixer\+Frere()}{AbN\_fixerFrere()}}
+{\footnotesize\ttfamily void Ab\+N\+\_\+fixer\+Frere (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} $\ast$}]{arbre,  }\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}]{frere }\end{DoxyParamCaption})}
+
+
+
+Permet de fixer un frère à l\textquotesingle{}arbre courant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$arbre} & un arbre N-\/aire \\
+\hline
+{\em frere} & frère qu\textquotesingle{}on veut fixer à l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{arbre_n_8h_afcb8fcb8d56af87816cc2e2b313e6119}\label{arbre_n_8h_afcb8fcb8d56af87816cc2e2b313e6119}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+obtenir\+Bool@{Ab\+N\+\_\+obtenir\+Bool}}
+\index{Ab\+N\+\_\+obtenir\+Bool@{Ab\+N\+\_\+obtenir\+Bool}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+obtenir\+Bool()}{AbN\_obtenirBool()}}
+{\footnotesize\ttfamily int Ab\+N\+\_\+obtenir\+Bool (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Accesseur peemettant d\textquotesingle{}acceder au champ mot\+Valide de la structure. 
+
+\begin{DoxyPrecond}{Precondition}
+assert(!\+Ab\+N\+\_\+est\+Vide(arbre)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & un arbre N-\/aire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_n_8h_acdc198fd92fcc1da585798225d543305}\label{arbre_n_8h_acdc198fd92fcc1da585798225d543305}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+obtenir\+Char@{Ab\+N\+\_\+obtenir\+Char}}
+\index{Ab\+N\+\_\+obtenir\+Char@{Ab\+N\+\_\+obtenir\+Char}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+obtenir\+Char()}{AbN\_obtenirChar()}}
+{\footnotesize\ttfamily int Ab\+N\+\_\+obtenir\+Char (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Accesseur permettant d\textquotesingle{}acceder au champ lettre de la structure. 
+
+\begin{DoxyPrecond}{Precondition}
+assert(!\+Ab\+N\+\_\+est\+Vide(arbre)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & un arbre N-\/aire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_n_8h_aa658270c22ee9c09df4332c2e2867c46}\label{arbre_n_8h_aa658270c22ee9c09df4332c2e2867c46}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+obtenir\+Fils@{Ab\+N\+\_\+obtenir\+Fils}}
+\index{Ab\+N\+\_\+obtenir\+Fils@{Ab\+N\+\_\+obtenir\+Fils}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+obtenir\+Fils()}{AbN\_obtenirFils()}}
+{\footnotesize\ttfamily \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} Ab\+N\+\_\+obtenir\+Fils (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Permet de se déplacer vers le fils de l\textquotesingle{}arbre en entrée. 
+
+\begin{DoxyPrecond}{Precondition}
+assert(!\+Ab\+N\+\_\+est\+Vide(arbre)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & un arbre N-\/aire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ab\+N\+\_\+\+ArbreN 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arbre_n_8h_a16697bf0a1224210256b0a5b05a0baa6}\label{arbre_n_8h_a16697bf0a1224210256b0a5b05a0baa6}} 
+\index{arbre\+N.\+h@{arbre\+N.\+h}!Ab\+N\+\_\+obtenir\+Frere@{Ab\+N\+\_\+obtenir\+Frere}}
+\index{Ab\+N\+\_\+obtenir\+Frere@{Ab\+N\+\_\+obtenir\+Frere}!arbre\+N.\+h@{arbre\+N.\+h}}
+\subsubsection{\texorpdfstring{Ab\+N\+\_\+obtenir\+Frere()}{AbN\_obtenirFrere()}}
+{\footnotesize\ttfamily \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} Ab\+N\+\_\+obtenir\+Frere (\begin{DoxyParamCaption}\item[{\hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN}}]{arbre }\end{DoxyParamCaption})}
+

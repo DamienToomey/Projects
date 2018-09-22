@@ -1,0 +1,4 @@
+Aide de asispell :
+asispell -h : cette aide
+asispell -d dico : correction de l'entree standard à l'aide du dictionnaire dico
+asispell -d dico -f fic : completer le dictionnaire dico à l'aide des mots du fichier fic (un mot par ligne)

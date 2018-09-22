@@ -1,0 +1,31 @@
+ASIspell
+Correcteur Orthographique
+------------------------------------------------------------------------------
+Commandes du makefile à faire dans le terminal à partir du répertoire courant :
+make tests : compile tous les tests unitaires
+make programme : compile tous les fichiers utilisés dans le programme
+make testsLCM : compile uniquement le test pour les listes chaînées
+make testsE : compile uniquement le test pour les ensembles		
+make testsAbN : compile uniquement le test pour l'arbre N-aire
+make testsMot : compile uniquement le test pour les mots
+make testsDico : compile uniquement le test pour le dictionnaire
+make testsCO : compile uniquement le test pour le correcteur orthographique
+make doc : génère la documentation en html et en latex
+make rapport : génère le pdf à partir du latex
+make all : fait toutes les étapes citées au-desssus
+make clean : supprime tout ce qui a été généré par les commandes citées au-dessus
+------------------------------------------------------------------------------
+Le répertoire DicoAvecAccents contient le dictionnaire mis à disposition sur Moodle
+
+Le répertoire DicoSansAccents contient un dictionnaire sans accents (48843 mots) que nous avons trouvé sur internet à l'adresse suivante :
+http://www.3zsoftware.com/download/
+------------------------------------------------------------------------------
+Configuration du terminal, des fichiers .c, .h et des dictionnaires : ISO 8859-15
+------------------------------------------------------------------------------
+Les commandes à utiliser pour exécuter le programme se trouvent dans le fichier fichierAide.txt.
+------------------------------------------------------------------------------
+Voici un exemple d'utilisation du programme avec le dictionnaire sans accents à partir du répertoire programme/ du projet :
+./bin/asispell -d ./bin/francais.dico -f ./DicoSansAccents/dico-ref-ascii.txt
+
+echo " yn pett   tset de corection orthographyque avec quelques fotes d'orthographe." | ./bin/asispell -d ./bin/francais.dico
+------------------------------------------------------------------------------

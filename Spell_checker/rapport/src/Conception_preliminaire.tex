@@ -1,0 +1,207 @@
+\subsection{Signatures liées au TAD Mot}
+\begin{algorithme}
+
+  \begin{enregistrement}{Mot}
+    \champEnregistrement{laChaine}{\chaine}
+    \champEnregistrement{longueur}{\naturel}
+  \end{enregistrement}\\
+
+  \signaturefonction {M.longueur}{mot : Mot}{\naturel}
+
+  \signatureFonctionAvecPreconditions {M.obtenirIemeCaractere}{mot :
+    Mot, pos : \naturelNonNul}{\caractere}{1 $\leq$ pos $\leq$
+    M.obtenirLongueur(mot)}
+
+  \signatureProcedureAvecPreconditions
+  {M.fixerIemeCaractere}{\paramEntreeSortie{mot :
+      Mot}, \paramEntree{pos : \naturelNonNul, lettre :\caractere}}{1
+    $\leq$ pos $\leq$ M.obtenirLongueur(mot)+1}
+
+  \signatureFonctionAvecPreconditions {M.remplacerLettre}{mot : Mot,
+    pos : \naturelNonNul, lettre : \caractere}{Mot}{1 $\leq$ pos
+    $\leq$ M.obtenirLongueur(mot)}
+
+  \signatureFonctionAvecPreconditions
+  {M.inverserDeuxLettresConsecutives}{mot : Mot, pos :
+    \naturelNonNul}{Mot}{1 $\leq$ pos $\leq$ M.obtenirLongueur(mot)-1}
+
+  \signatureFonctionAvecPreconditions {M.supprimerLettre}{mot : Mot,
+    pos : \naturelNonNul}{Mot}{(1 $\leq$ pos $\leq$
+    obtenirLongueur(mot)) et (obtenirLongueur(mot) $\geq$ 2)}
+
+  \signatureFonctionAvecPreconditions {M.insererLettre}{mot : Mot, lettre :
+    \caractere, pos : \naturelNonNul}{Mot}{1 $\leq$ pos $\leq$
+    M.obtenirLongueur(mot)+1}
+
+  \signatureprocedure
+  {M.obtenirMotEntreeStandard}{\paramEntreeSortie{posDepuisDebutFlux :
+      \entier \repnote, mot : Mot}, \paramSortie{arret :
+      \booleen}}
+
+  \signatureprocedure {M.fixerLaChaine}{\paramEntreeSortie{mot :
+      Mot}, \paramEntree{chaine : \chaine}}
+
+  \signatureFonctionAvecPreconditions {M.obtenirLaChaine}{mot :
+    Mot}{\chaine}{M.obtenirLongueur(mot)>=0}
+
+  \signatureprocedure {M.fixerLongueur}{\paramEntreeSortie{mot :
+      Mot}, \paramEntree{length : \naturel}}
+
+  \signaturefonction {M.obtenirLongueur}{mot : Mot}{\naturel}
+
+  \signaturefonction {M.sontEgaux}{mot1, mot2 : Mot}{\booleen}
+
+  \signaturefonction{M.estUneLettre}{c : \caractere}{\booleen}
+\end{algorithme}
+
+\subsection{Signatures liées au TAD Dictionnaire}
+\begin{algorithme}
+
+  \type{Dictionnaire}{ArbreN}\\
+
+  \signaturefonction {D.creerDico}{}{Dictionnaire}
+
+  \signaturefonction {D.estVide}{dico : Dictionnaire}{\booleen}
+
+  \signatureprocedure {D.insererMot}{\paramEntreeSortie{dico :
+      Dictionnaire}, \paramEntree{lemot : Mot}}
+
+  \signaturefonction {D.estPresent}{dico : Dictionnaire, mot : Mot}{\booleen}
+
+  \signatureprocedure{D.sauvegarderDico}{\paramSortie{fichierSDDDico :
+      Fichier Texte}, \paramEntree{dico : D.Dictionnaire}}
+
+  \signatureFonctionAvecPreconditions{D.chargerDico}{nomFichier :
+    \chaine, fichierSDDDico : Fichier
+    Texte}{Dictionnaire}{F.fichierExiste(nomFichier)}
+\end{algorithme}
+
+\subsection{Signatures liées au TAD CorrecteurOrthographique}
+
+\begin{algorithme}
+
+  \begin{enregistrement}{CorrecteurOrthographique}
+    \champEnregistrement{mot}{Mot}
+    \champEnregistrement{dico}{Dictionnaire}
+  \end{enregistrement}\\
+
+  \signaturefonction{CO.correcteurOrthographique}{}{CorrecteurOrthographique}
+
+  \signatureFonctionAvecPreconditions {CO.proposerCorrection}{co :
+    CorrecteurOrthographique}{Ensemble<Mot>}{non estBienOrthographie(co)}
+
+  \signatureFonction {CO.estBienOrthographie}{co :
+    CorrecteurOrthographique}{\booleen}
+
+  \signatureFonction{CO.obtenirMot}{co : CorrecteurOrthographique}{Mot}
+  \signatureFonction{CO.obtenirDictionnaire}{co :
+    CorrecteurOrthographique}{Dictionnaire}
+
+  \signatureprocedure{CO.fixerMot}{\paramEntreeSortie{co :
+      CorrecteurOrthographique}, \paramEntree{mot : Mot}}
+
+  \signatureprocedure{CO.fixerDictionnaire}{\paramEntreeSortie{co :
+      CorrecteurOrthographique}, \paramEntree{dico : Dictionnaire}}
+\end{algorithme}
+
+\subsection{Signatures liées au TAD Arbre n-aire}
+\begin{algorithme}
+  \type{ArbreN}{\typePointeur{Noeud}}
+
+  \begin{enregistrement}{Noeud}
+    \champEnregistrement{lettre}{\caractere}
+    \champEnregistrement{motValide}{\booleen}
+    \champEnregistrement{Fils}{ArbreN}
+    \champEnregistrement{Frere}{ArbreN}
+  \end{enregistrement}\\
+
+  \signatureFonction {AbN.creerArbreNonInit}{}{ArbreN}
+
+  \signatureFonction {AbN.estVide}{arbre : ArbreN}{\booleen}
+
+  \signatureFonctionAvecPreconditions {AbN.obtenirBool}{arbre :
+    ArbreN}{\booleen}{non AbN.estVide(arbre)}
+
+  \signatureFonctionAvecPreconditions {AbN.obtenirChar}{arbre :
+    ArbreN}{\caractere}{non AbN.estVide(arbre)}
+
+  \signatureProcedureAvecPreconditions
+  {AbN.fixerBool}{\paramEntreeSortie{arbre : ArbreN} \paramEntree{
+      valide : \booleen}}{non AbN.estVide(arbre)}
+
+  \signatureProcedureAvecPreconditions
+  {AbN.fixerChar}{\paramEntreeSortie{arbre : ArbreN} \paramEntree{
+      lalettre : \caractere}}{non AbN.estVide(arbre)}
+
+  \signatureProcedureAvecPreconditions
+  {AbN.fixerFils}{\paramEntreeSortie{arbre : ArbreN} \paramEntree{fils
+      : ArbreN}}{non AbN.estVide(arbre)}
+
+  \signatureProcedureAvecPreconditions
+  {AbN.fixerFrere}{\paramEntreeSortie{arbre :
+      ArbreN} \paramEntree{frere : ArbreN}}{non AbN.estVide(arbre)}
+
+  \signatureFonctionAvecPreconditions {AbN.obtenirFils}{arbre :
+    ArbreN}{ArbreN}{non AbN.estVide(arbre)}
+
+  \signatureFonctionAvecPreconditions {AbN.obtenirFrere}{arbre :
+    ArbreN}{ArbreN}{non AbN.estVide(arbre)}
+\end{algorithme}
+
+\subsection{Signatures des procédures d'affichage}
+\begin{algorithme}
+  \signatureprocedure {A.afficherAide}{}
+
+  \signatureprocedure {A.affichageMotBienEcrit}{}
+
+  \signatureprocedure
+  {A.afficherCorrectionEtPosMot}{\paramEntree{lesCorrections :
+      Ensemble<Mot>, leMot : Mot, pos : \naturel}}
+\end{algorithme}
+
+\subsection{Signatures des procédures privées du main}
+\begin{algorithme}
+  \signaturefonction{queFaireEnFonctionDeCommandeEntree \footnote{Nous ne
+    mettons pas cette fonction en pseudocode dans la conception
+    détaillée car elle est spécifique au langage utilisé (argc et agrv
+    en C)}}{argc : \naturel, argv : tableau de CdC}{\naturelNonNul}
+
+  \signatureprocedure{mettreMotsDansSDDdico}{\paramEntree{nomFichierSDDDico
+      : \chaine, nomFichierTexteMotsAInserer : \chaine}}
+
+  \signatureprocedure {corrigerMot}{\paramEntree{co :
+      CorrecteurOrthographique, posMotFaux : \naturel}}
+\end{algorithme}
+
+\subsection{Signatures liées au TAD Fichier Texte donné dans le sujet}
+\begin{algorithme}
+  \signaturefonction{fichierTexte}{chaine : \chaine}{FichierTexte}
+
+  \signatureProcedureAvecPreconditions{ouvrir}{\paramEntreeSortie{f :
+      FichierTexte}, \paramEntree{Mode}}{non estOuvert(f)}
+
+  \signatureProcedureAvecPreconditions{fermer}{\paramEntreeSortie{f :
+      FichierTexte}}{estOuvert(f)}
+  \signaturefonction{estOuvert}{f : FichierTexte}{Booleen}
+
+  \signaturefonction{mode}{f : FichierTexte}{Mode}
+
+  \signatureFonctionAvecPreconditions{finFichier}{f :
+    FichierTexte}{Booleen}{mode(f)=lecture}
+
+  \signatureProcedureAvecPreconditions{ecrireChaine}{\paramEntreeSortie{f
+      : FichierTexte}, \paramEntree{chaine : \chaine}}{estOuvert(f) et
+    mode(f)=ecriture}
+
+  \signatureProcedureAvecPreconditions{lireChaine}{\paramEntreeSortie{f
+      : FichierTexte}, \paramSortie{chaine : \chaine}}{estOuvert(f) et
+    mode(f)=lecture et non finFichier(f)}
+
+  \signatureProcedureAvecPreconditions{ecrireCaractere}{\paramEntreeSortie{f
+      : FichierTexte}, \paramEntree{c : \caractere}}{estOuvert(f) et
+    mode(f)=ecriture}
+
+  \signatureProcedureAvecPreconditions{lireCaractere}{\paramEntreeSortie{f
+      : FichierTexte}, \paramSortie{c : \caractere}}{estOuvert(f) et
+    mode(f)=lecture et non finFichier(f)}
+\end{algorithme}

@@ -1,0 +1,206 @@
+\subsection{Types Abstraits de Données (TAD)}
+\subsubsection{TAD Mot}
+
+\begin{tad}
+  \tadNom{Mot}
+  \tadDependances{\caractere, \chaine, \naturelNonNul, \booleen, Ensemble}
+  \begin{tadOperations}{}
+    \tadOperation{longueur}{\tadUnParam{Mot}}{\tadUnParam{\naturel}}
+    \tadOperationAvecPreconditions{obtenirIemeCaractere}{\tadDeuxParams{Mot}
+      {\naturelNonNul}}{\tadUnParam{\caractere}}
+    \tadOperationAvecPreconditions{fixerIemeCaractere}{\tadTroisParams{Mot}
+      {\naturelNonNul}{\caractere}}{\tadUnParam{Mot}}
+    \tadOperationAvecPreconditions{remplacerLettre}{\tadTroisParams{Mot}
+      {\naturelNonNul}{\caractere}}{\tadUnParam{Mot}}
+    \tadOperationAvecPreconditions{inverserDeuxLettresConsecutives}
+    {\tadDeuxParams{Mot}{\naturelNonNul}}{\tadUnParam{Mot}}
+    \tadOperationAvecPreconditions{supprimerLettre}{\tadDeuxParams{Mot}
+      {\naturelNonNul}}{\tadUnParam{Mot}}
+    \tadOperationAvecPreconditions{insererLettre}{\tadTroisParams{Mot}
+      {\caractere}{\naturelNonNul}}{\tadUnParam{Mot}}
+    \tadOperation{obtenirMotEntreeStandard}{\tadDeuxParams{Mot}{\entier \repnote}}
+    {\tadTroisParams{\entier \repnote}{Mot}{\booleen}}
+    \tadOperation{fixerLaChaine}{\tadDeuxParams{Mot}{\chaine}}{\tadUnParam{Mot}}
+    \tadOperationAvecPreconditions{obtenirLaChaine}{\tadUnParam{Mot}}
+    {\tadUnParam{\chaine}}
+    \tadOperation{fixerLongueur}{\tadDeuxParams{Mot}{\naturel}}{\tadUnParam{Mot}}
+    \tadOperation{obtenirLongueur}{\tadUnParam{Mot}}{\tadUnParam{\naturel}}
+    \tadOperation{sontEgaux}{\tadDeuxParams{Mot}{Mot}}{\tadUnParam{\booleen}}
+    \tadOperation{estUneLettre}{\tadUnParam{\caractere}}{\tadUnParam{\booleen}}
+  \end{tadOperations}
+
+  \begin{tadAxiomes}
+    \tadAxiome{supprimer(insererLettre(mot, c, i), i)=mot}
+    \tadAxiome{inverserDeuxLettresConsecutives(inverserDeuxLettresConsecutives(
+      mot, pos), pos)=mot}
+  \end{tadAxiomes}
+
+  \begin{tadPreconditions}{}
+    \tadPrecondition{obtenirIemeCaractere(mot, pos)}{1 $\leq$ pos
+      $\leq$ obtenirLongueur(mot)}
+    \tadPrecondition{fixerIemeCaractere(mot, pos, c)}{1 $\leq$ pos
+      $\leq$ obtenirLongueur(mot)+1}
+    \tadPrecondition{remplacerLettre(mot, pos, lettre)}{1 $\leq$ pos
+      $\leq$ obtenirLongueur(mot)}
+    \tadPrecondition{inverserDeuxLettresConsecutives(mot, pos)}{1
+      $\leq$ pos $\leq$ obtenirLongueur(mot)-1}
+    \tadPrecondition{supprimerLettre(mot, pos)}{(1 $\leq$ pos $\leq$
+      obtenirLongueur(mot)) et (obtenirLongueur(mot) $\geq$ 2)}
+    \tadPrecondition{insererLettre(mot, c, pos)}{1 $\leq$ pos $\leq$
+      obtenirLongueur(mot)+1}
+    \tadPrecondition{obtenirLaChaine(mot)}{obtenirLongueur(mot)>=0}
+  \end{tadPreconditions}
+\end{tad}
+
+\subsubsection{TAD Dictionnaire}
+
+\begin{tad}
+  \tadNom{Dictionnaire}
+  \tadParametres{Mot}
+  \tadDependances{\booleen, \naturel}
+  \begin{tadOperations}{}
+    \tadOperation{creerDico}{}{\tadUnParam{Dictionnaire}}
+
+    \tadOperation{estVide}{\tadUnParam{Dictionnaire}}{\tadUnParam{\booleen}}
+
+    \tadOperation{insererMot}{\tadDeuxParams{Dictionnaire}{Mot}}
+    {\tadUnParam{Dictionnaire}}
+
+    \tadOperation{estPresent}{\tadDeuxParams{Dictionnaire}{Mot}}
+    {\tadUnParam{\booleen}}
+
+    \tadOperation{sauvegarderDico}{\tadDeuxParams{\chaine}{Dictionnaire}}
+    {\tadUnParam{Fichier Texte}}
+
+    \tadOperation{chargerDico}{\tadDeuxParams{\chaine}{Fichier Texte}}
+    {\tadUnParam{Dictionnaire}}
+  \end{tadOperations}
+
+  \begin{tadAxiomes}
+    \tadAxiome{insererMot(mot, insererMot(mot, dico))=insererMot(mot,dico)}
+
+    \tadAxiome{estPresent(mot, insererMot(mot, dico)}
+  \end{tadAxiomes}
+\end{tad}
+
+\subsubsection{TAD CorrecteurOrthographique}
+
+\begin{tad}
+  \tadNom{CorrecteurOrthographique}
+  \tadParametres{Mot, Dictionnaire}
+  \tadDependances{\booleen, Ensemble}
+  \begin{tadOperations}{}
+    \tadOperation{correcteurOrthographique}{}
+    {\tadUnParam{CorrecteurOrthographique}}
+
+    \tadOperationAvecPreconditions{proposerCorrection}
+    {\tadDeuxParams{CorrecteurOrthographique}}{\tadUnParam{Ensemble<Mot>}}
+
+    \tadOperationAvecPreconditions{estBienOrthographie}
+    {\tadDeuxParams{CorrecteurOrthographique}}{\tadUnParam{\booleen}}
+
+    \tadOperation{obtenirMot}{\tadUnParam{CorrecteurOrthographique}}
+    {\tadUnParam{Mot}}
+
+    \tadOperation{obtenirDictionnaire}{\tadUnParam{CorrecteurOrthographique}}
+    {\tadUnParam{Dictionnaire}}
+
+    \tadOperation{fixerMot}{\tadDeuxParams{CorrecteurOrthographique}{Mot}}
+    {\tadUnParam{CorrecteurOrthographique}}
+
+    \tadOperation{fixerDictionnaire}{\tadDeuxParams{CorrecteurOrthographique}
+      {Dictionnaire}}{\tadUnParam{CorrecteurOrthographique}}
+  \end{tadOperations}
+
+  \begin{tadPreconditions}{}
+    \tadPrecondition{proposerCorrection(co)}{non estBienOrthographie(co)}
+  \end{tadPreconditions}
+\end{tad}
+
+\subsubsection{TAD Arbre n-aire}
+
+Pour représenter notre TAD Dictionnaire nous avons choisis d'utiliser
+un arbre n-aire. Nous allons maintenant détailler ce TAD.\\
+
+\begin{tad}
+  \tadNom{AbreN}
+  \tadDependances{\booleen, \chaine, \caractere, Ensemble}
+  \begin{tadOperations}{}
+
+    \tadOperation{creerArbreNonInit}{}{\tadUnParam{ArbreN}}
+    \tadOperation{estVide}{\tadUnParam{ArbreN}}{\tadUnParam{\booleen}}
+    \tadOperationAvecPreconditions{obtenirBool}{\tadUnParam{ArbreN}}
+    {\tadUnParam{\booleen}}
+    \tadOperationAvecPreconditions{obtenirChar}{\tadUnParam{ArbreN}}
+    {\tadUnParam{\caractere}}
+    \tadOperationAvecPreconditions{fixerBool}{\tadDeuxParams{ArbreN}
+      {\booleen}}{\tadUnParam{ArbreN}}
+    \tadOperationAvecPreconditions{fixerChar}{\tadDeuxParams{ArbreN}
+      {\caractere}}{\tadUnParam{ArbreN}}
+    \tadOperationAvecPreconditions{fixerFils}{\tadDeuxParams{ArbreN}{ArbreN}}
+    {\tadUnParam{ArbreN}}
+    \tadOperationAvecPreconditions{fixerFrere}{\tadDeuxParams{ArbreN}{ArbreN}}
+    {\tadUnParam{ArbreN}}
+    \tadOperationAvecPreconditions{obtenirFils}{\tadUnParam{ArbreN}}
+    {\tadUnParam{ArbreN}}
+    \tadOperationAvecPreconditions{obtenirFrere}{\tadUnParam{ArbreN}}
+    {\tadUnParam{ArbreN}}
+  \end{tadOperations}
+
+  \begin{tadPreconditions}{}
+
+    \tadPrecondition{obtenirBool(arbre)}{non estVide(arbre)}
+    \tadPrecondition{obtenirChar(arbre)}{non estVide(arbre)}
+    \tadPrecondition{fixerBool(arbre, bool)}{non estVide(arbre)}
+    \tadPrecondition{fixerChar(arbre, car)}{non estVide(arbre)}
+    \tadPrecondition{fixerFils(arbre, fils)}{non estVide(arbre)}
+    \tadPrecondition{fixerFrere(arbre, frere)}{non estVide(arbre)}
+    \tadPrecondition{obtenirFils(arbre)}{non estVide(arbre)}
+    \tadPrecondition{obtenirFrere(arbre)}{non estVide(arbre)}
+  \end{tadPreconditions}
+\end{tad}
+
+\newpage
+\subsection{Analyse descendante}
+
+Notre analyse descendante se trouve sur les quatre pages suivantes. Du
+fait de sa taille, les figures ne sont pas très nettes. Nous vous
+invitons donc à regarder les images AnalyseDescendanteMAIN-90,
+AnalyseDescendanteMettreMotDansSDDdico-90, AnalyseDescendanteCorrigerMot-90,\\
+AnalyseDescendanteobtenirMotEntreeStandard-90 au format jpg dans le
+répertoire /rapport/images. Vous pouvez aussi cliquer
+\href{https://drive.google.com/file/d/1KbCsgzSyPy5rJcjGTQRZmwdG7l1mG2OS/view?usp=sharing}{\emph{ici}},
+pour voir, en ligne, l'image de l'analyse descendante du programme principale,
+\href{https://drive.google.com/file/d/1I7NCatB1OX_qTifBynEafyC2xIsoMoRn/view?usp=sharing}{\emph{ici}}
+pour celle correspondant à 'mettreMotDansSDDdico',
+\href{https://drive.google.com/file/d/14eHbYWqVv2qjTY-rC_iW8tHbd5dhlxcR/view?usp=sharing}{\emph{ici}}
+pour celle correspondant à `corrigerMot', ou encore
+\href{https://drive.google.com/file/d/15DQ746vTvA2d2KU2f6ZqBqg-CSaY8RHV/view?usp=sharing}{\emph{ici}}
+pour celle correspondant à 'obtenirMotEntreeStandard'.
+
+
+\newpage
+ \begin{center}
+   \pgfimage[height=\textheight,interpolate=true]
+   {images/AnalyseDescendanteMAIN-90}
+ \end{center}
+
+ \newpage
+ \begin{center}
+   \pgfimage[height=\textheight,interpolate=true]
+   {images/AnalyseDescendanteobtenirMotEntreeStandard-90.jpg}
+ \end{center}
+
+ \newpage
+ \begin{center}
+   \pgfimage[height=\textheight,interpolate=true]
+   {images/AnalyseDescendanteCorrigerMot-90.jpg}
+ \end{center}
+
+ \newpage
+ \begin{center}
+   \pgfimage[height=\textheight,interpolate=true]
+   {images/AnalyseDescendanteMettreMotDansSDDdico-90.jpg}
+ \end{center}
+
+ \clearpage

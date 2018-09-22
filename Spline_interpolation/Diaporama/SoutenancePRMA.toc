@@ -1,0 +1,20 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Point historique}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Interpolation}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Splines}{5}{0}{2}
+\beamer@sectionintoc {3}{Courbes de B\'ezier }{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Contexte}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Partie Math\'ematiques}{7}{0}{3}
+\beamer@sectionintoc {4}{Splines cubiques}{8}{0}{4}
+\beamer@subsectionintoc {4}{1}{Exemple de calcul d'une fonction spline cubique}{8}{0}{4}
+\beamer@sectionintoc {5}{B-splines}{17}{0}{5}
+\beamer@subsectionintoc {5}{1}{Les bases des B-splines}{17}{0}{5}
+\beamer@subsectionintoc {5}{2}{Courbe de degr\'e 3 (k=3)}{18}{0}{5}
+\beamer@sectionintoc {6}{Avantages et inconv\'{e}nients}{19}{0}{6}
+\beamer@sectionintoc {7}{Exemples de fonctions}{20}{0}{7}
+\beamer@subsectionintoc {7}{1}{Fonction de Runge}{20}{0}{7}
+\beamer@subsectionintoc {7}{2}{Fonctions Cosinus et Exponentielle}{21}{0}{7}
+\beamer@sectionintoc {8}{Applications des splines cubiques}{22}{0}{8}
+\beamer@subsectionintoc {8}{1}{Typographie}{22}{0}{8}
+\beamer@subsectionintoc {8}{2}{Les autres applications des interpolations par spline}{23}{0}{8}

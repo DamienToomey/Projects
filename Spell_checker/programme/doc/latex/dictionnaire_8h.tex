@@ -1,0 +1,153 @@
+\hypertarget{dictionnaire_8h}{}\section{include/dictionnaire.h File Reference}
+\label{dictionnaire_8h}\index{include/dictionnaire.\+h@{include/dictionnaire.\+h}}
+
+
+Implantation du T\+AD Dictionnaire.  
+
+
+{\ttfamily \#include \char`\"{}arbre\+N.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} \hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire}
+\begin{DoxyCompactList}\small\item\em Le type D\+\_\+\+Dictionnaire permet de représenter un dictionnaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} \hyperlink{dictionnaire_8h_afd7c58ecd4450075bfc8a2bc10618661}{D\+\_\+creer\+Dico} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de créer une racine avec des champs initialisés à \char`\"{}rien\char`\"{} (N\+U\+LL pour le frère et le fils, 0 pour le champs mot\+Valide et charnull (\textquotesingle{}\textbackslash{}0\textquotesingle{}) pour le champ lettre) \end{DoxyCompactList}\item 
+int \hyperlink{dictionnaire_8h_acdf1c3c7ef2cbc3c4342a773269d4858}{D\+\_\+est\+Vide} (\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} dico)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si un dictionnaire est vide. \end{DoxyCompactList}\item 
+int \hyperlink{dictionnaire_8h_add85f6780e765079cfd53854d27d7de3}{D\+\_\+est\+Present} (\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} dico, \hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si mot est présent dans un dictionnaire. \end{DoxyCompactList}\item 
+void \hyperlink{dictionnaire_8h_a0b8dc93c9a6866c3ec453cfb023ad138}{D\+\_\+inserer\+Mot} (\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} $\ast$dico, \hyperlink{struct_m___mot}{M\+\_\+\+Mot} lemot)
+\begin{DoxyCompactList}\small\item\em Procédure permettant d\textquotesingle{}insérer un mot dans un dictionnaire. \end{DoxyCompactList}\item 
+void \hyperlink{dictionnaire_8h_a138366222ed53cbd7bef9c98dc3d6925}{D\+\_\+sauvegarder\+Dico} (char nom\+Fichier\mbox{[}$\,$\mbox{]}, \hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} dico)
+\item 
+\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} \hyperlink{dictionnaire_8h_a8dd01736643592b127bd53f81858b31c}{D\+\_\+charger\+Dico} (char nom\+Fichier\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de charger un Dictionnaire à partir du nom du fichier contenant le dictionnaire (francais.\+dico par exemple) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implantation du T\+AD Dictionnaire. 
+
+\begin{DoxyAuthor}{Author}
+B\+O\+U\+T\+A\+Y\+EB Dounia, S\+A\+U\+R\+ON Thibault, S\+E\+S\+B\+OÜÉ Matthias, T\+O\+O\+M\+EY Damien 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+06/12/2017 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}\label{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}} 
+\index{dictionnaire.\+h@{dictionnaire.\+h}!D\+\_\+\+Dictionnaire@{D\+\_\+\+Dictionnaire}}
+\index{D\+\_\+\+Dictionnaire@{D\+\_\+\+Dictionnaire}!dictionnaire.\+h@{dictionnaire.\+h}}
+\subsubsection{\texorpdfstring{D\+\_\+\+Dictionnaire}{D\_Dictionnaire}}
+{\footnotesize\ttfamily \hyperlink{arbre_n_8h_add8f6e03bc4360adaf4735b01c864d18}{Ab\+N\+\_\+\+ArbreN} \hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire}}
+
+
+
+Le type D\+\_\+\+Dictionnaire permet de représenter un dictionnaire. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{dictionnaire_8h_a8dd01736643592b127bd53f81858b31c}\label{dictionnaire_8h_a8dd01736643592b127bd53f81858b31c}} 
+\index{dictionnaire.\+h@{dictionnaire.\+h}!D\+\_\+charger\+Dico@{D\+\_\+charger\+Dico}}
+\index{D\+\_\+charger\+Dico@{D\+\_\+charger\+Dico}!dictionnaire.\+h@{dictionnaire.\+h}}
+\subsubsection{\texorpdfstring{D\+\_\+charger\+Dico()}{D\_chargerDico()}}
+{\footnotesize\ttfamily \hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} D\+\_\+charger\+Dico (\begin{DoxyParamCaption}\item[{char}]{nom\+Fichier\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de charger un Dictionnaire à partir du nom du fichier contenant le dictionnaire (francais.\+dico par exemple) 
+
+\begin{DoxyPrecond}{Precondition}
+assert(F\+\_\+fichier\+Existe(nom\+Fichier)==T\+R\+UE) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Fichier\mbox{[}$\,$\mbox{]}} & le nom du fichier d\textquotesingle{}où on va charger le Dictionnaire (francais.\+dico par exemple) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\+\_\+\+Dictionnaire 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dictionnaire_8h_afd7c58ecd4450075bfc8a2bc10618661}\label{dictionnaire_8h_afd7c58ecd4450075bfc8a2bc10618661}} 
+\index{dictionnaire.\+h@{dictionnaire.\+h}!D\+\_\+creer\+Dico@{D\+\_\+creer\+Dico}}
+\index{D\+\_\+creer\+Dico@{D\+\_\+creer\+Dico}!dictionnaire.\+h@{dictionnaire.\+h}}
+\subsubsection{\texorpdfstring{D\+\_\+creer\+Dico()}{D\_creerDico()}}
+{\footnotesize\ttfamily \hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} D\+\_\+creer\+Dico (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de créer une racine avec des champs initialisés à \char`\"{}rien\char`\"{} (N\+U\+LL pour le frère et le fils, 0 pour le champs mot\+Valide et charnull (\textquotesingle{}\textbackslash{}0\textquotesingle{}) pour le champ lettre) 
+
+\begin{DoxyReturn}{Returns}
+D\+\_\+\+Dictionnaire 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dictionnaire_8h_add85f6780e765079cfd53854d27d7de3}\label{dictionnaire_8h_add85f6780e765079cfd53854d27d7de3}} 
+\index{dictionnaire.\+h@{dictionnaire.\+h}!D\+\_\+est\+Present@{D\+\_\+est\+Present}}
+\index{D\+\_\+est\+Present@{D\+\_\+est\+Present}!dictionnaire.\+h@{dictionnaire.\+h}}
+\subsubsection{\texorpdfstring{D\+\_\+est\+Present()}{D\_estPresent()}}
+{\footnotesize\ttfamily int D\+\_\+est\+Present (\begin{DoxyParamCaption}\item[{\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire}}]{dico,  }\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si mot est présent dans un dictionnaire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dico} & un dictionnaire \\
+\hline
+{\em mot} & le mot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dictionnaire_8h_acdf1c3c7ef2cbc3c4342a773269d4858}\label{dictionnaire_8h_acdf1c3c7ef2cbc3c4342a773269d4858}} 
+\index{dictionnaire.\+h@{dictionnaire.\+h}!D\+\_\+est\+Vide@{D\+\_\+est\+Vide}}
+\index{D\+\_\+est\+Vide@{D\+\_\+est\+Vide}!dictionnaire.\+h@{dictionnaire.\+h}}
+\subsubsection{\texorpdfstring{D\+\_\+est\+Vide()}{D\_estVide()}}
+{\footnotesize\ttfamily int D\+\_\+est\+Vide (\begin{DoxyParamCaption}\item[{\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire}}]{dico }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si un dictionnaire est vide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dico} & un dictionnaire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dictionnaire_8h_a0b8dc93c9a6866c3ec453cfb023ad138}\label{dictionnaire_8h_a0b8dc93c9a6866c3ec453cfb023ad138}} 
+\index{dictionnaire.\+h@{dictionnaire.\+h}!D\+\_\+inserer\+Mot@{D\+\_\+inserer\+Mot}}
+\index{D\+\_\+inserer\+Mot@{D\+\_\+inserer\+Mot}!dictionnaire.\+h@{dictionnaire.\+h}}
+\subsubsection{\texorpdfstring{D\+\_\+inserer\+Mot()}{D\_insererMot()}}
+{\footnotesize\ttfamily void D\+\_\+inserer\+Mot (\begin{DoxyParamCaption}\item[{\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire} $\ast$}]{dico,  }\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+
+
+Procédure permettant d\textquotesingle{}insérer un mot dans un dictionnaire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$dico} & un dictionnaire \\
+\hline
+{\em mot} & un mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dictionnaire_8h_a138366222ed53cbd7bef9c98dc3d6925}\label{dictionnaire_8h_a138366222ed53cbd7bef9c98dc3d6925}} 
+\index{dictionnaire.\+h@{dictionnaire.\+h}!D\+\_\+sauvegarder\+Dico@{D\+\_\+sauvegarder\+Dico}}
+\index{D\+\_\+sauvegarder\+Dico@{D\+\_\+sauvegarder\+Dico}!dictionnaire.\+h@{dictionnaire.\+h}}
+\subsubsection{\texorpdfstring{D\+\_\+sauvegarder\+Dico()}{D\_sauvegarderDico()}}
+{\footnotesize\ttfamily void D\+\_\+sauvegarder\+Dico (\begin{DoxyParamCaption}\item[{char}]{nom\+Fichier\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{dictionnaire_8h_a8f36a2958b6861fc34918440f72d4350}{D\+\_\+\+Dictionnaire}}]{dico }\end{DoxyParamCaption})}
+

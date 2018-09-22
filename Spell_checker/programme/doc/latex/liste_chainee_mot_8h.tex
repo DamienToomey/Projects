@@ -1,0 +1,231 @@
+\hypertarget{liste_chainee_mot_8h}{}\section{include/liste\+Chainee\+Mot.h File Reference}
+\label{liste_chainee_mot_8h}\index{include/liste\+Chainee\+Mot.\+h@{include/liste\+Chainee\+Mot.\+h}}
+
+
+Implantation du T\+AD Liste Chainée.  
+
+
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mot.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_l_c_m___noeud}{L\+C\+M\+\_\+\+Noeud}
+\begin{DoxyCompactList}\small\item\em Le type \hyperlink{struct_l_c_m___noeud}{L\+C\+M\+\_\+\+Noeud} est une structure contenant un element et la liste suivante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{liste_chainee_mot_8h_a9198960fdc38cf4b12887888507a0986}{L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE}~1
+\begin{DoxyCompactList}\small\item\em L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_l_c_m___noeud}{L\+C\+M\+\_\+\+Noeud} $\ast$ \hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}
+\begin{DoxyCompactList}\small\item\em Le type Liste\+Chainee permet de représenter une liste chainée de mots. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_l_c_m___noeud}{L\+C\+M\+\_\+\+Noeud} \hyperlink{liste_chainee_mot_8h_a761b2df1086f4cbf21e67d94241cd8b2}{L\+C\+M\+\_\+\+Noeud}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} \hyperlink{liste_chainee_mot_8h_a38a81a963c2360d3d33c3c821e82f12e}{L\+C\+M\+\_\+liste\+Chainee\+Mot} ()
+\begin{DoxyCompactList}\small\item\em Fonction de création d\textquotesingle{}une liste chainée de Mot. \end{DoxyCompactList}\item 
+int \hyperlink{liste_chainee_mot_8h_af7799b59292caa6ce8e6a6e989aec98f}{L\+C\+M\+\_\+est\+Vide} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} l)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si une liste de Mot est vide. \end{DoxyCompactList}\item 
+void \hyperlink{liste_chainee_mot_8h_a48d3abf4434d0937e173bd08f2013174}{L\+C\+M\+\_\+ajouter} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} $\ast$pl, \hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot)
+\begin{DoxyCompactList}\small\item\em Procédure qui permet d\textquotesingle{}ajouter un Mot dans une liste de Mot. \end{DoxyCompactList}\item 
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{liste_chainee_mot_8h_acaa5debe132f93c99051dcfc2667bc03}{L\+C\+M\+\_\+obtenir\+Element} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} l)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le mot du noeud d\textquotesingle{}une Liste de Mot. \end{DoxyCompactList}\item 
+\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} \hyperlink{liste_chainee_mot_8h_a4c9b5ceac62db82dd2124400f0bc1e9d}{L\+C\+M\+\_\+obtenir\+Liste\+Suivante} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} l)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir la liste suivante du noeud courant d\textquotesingle{}une liste de Mot. \end{DoxyCompactList}\item 
+void \hyperlink{liste_chainee_mot_8h_aabe00a716d1ebb9a2f9c211e99dd08e6}{L\+C\+M\+\_\+fixer\+Liste\+Suivante} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} pl, \hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} l)
+\item 
+void \hyperlink{liste_chainee_mot_8h_a3d6277a68ddff868c57110835ce81957}{L\+C\+M\+\_\+fixer\+Element} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} pl, \hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot)
+\item 
+void \hyperlink{liste_chainee_mot_8h_a97130b98ff71c8a42bd3434209a5503a}{L\+C\+M\+\_\+supprimer\+Tete} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} $\ast$pl)
+\begin{DoxyCompactList}\small\item\em Procédure qui permet de supprimer le noeud courant (la tête de la liste) d\textquotesingle{}une liste de Mot. \end{DoxyCompactList}\item 
+void \hyperlink{liste_chainee_mot_8h_a12901b4b1cb7839dba703af8a2f396d9}{L\+C\+M\+\_\+supprimer} (\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} $\ast$pl)
+\begin{DoxyCompactList}\small\item\em Procédure qui permet de supprimer une liste de Mot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implantation du T\+AD Liste Chainée. 
+
+\begin{DoxyAuthor}{Author}
+B\+O\+U\+T\+A\+Y\+EB Dounia, S\+A\+U\+R\+ON Thibault, S\+E\+S\+B\+OÜÉ Matthias, T\+O\+O\+M\+EY Damien 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+06/12/2017 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{liste_chainee_mot_8h_a9198960fdc38cf4b12887888507a0986}\label{liste_chainee_mot_8h_a9198960fdc38cf4b12887888507a0986}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE@{L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE}}
+\index{L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE@{L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE}{LCM\_ERREUR\_MEMOIRE}}
+{\footnotesize\ttfamily \#define L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE~1}
+
+
+
+L\+C\+M\+\_\+\+E\+R\+R\+E\+U\+R\+\_\+\+M\+E\+M\+O\+I\+RE 1. 
+
+Définition d\textquotesingle{}une constante utilisée pour vérifier le fonctionnement de l\textquotesingle{}allocation mémoire avec errno 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}\label{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+\+Liste\+Chainee\+Mot@{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}
+\index{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot@{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}{LCM\_ListeChaineeMot}}
+{\footnotesize\ttfamily \hyperlink{struct_l_c_m___noeud}{L\+C\+M\+\_\+\+Noeud} $\ast$ \hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}
+
+
+
+Le type Liste\+Chainee permet de représenter une liste chainée de mots. 
+
+\mbox{\Hypertarget{liste_chainee_mot_8h_a761b2df1086f4cbf21e67d94241cd8b2}\label{liste_chainee_mot_8h_a761b2df1086f4cbf21e67d94241cd8b2}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+\+Noeud@{L\+C\+M\+\_\+\+Noeud}}
+\index{L\+C\+M\+\_\+\+Noeud@{L\+C\+M\+\_\+\+Noeud}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+\+Noeud}{LCM\_Noeud}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_l_c_m___noeud}{L\+C\+M\+\_\+\+Noeud}  \hyperlink{struct_l_c_m___noeud}{L\+C\+M\+\_\+\+Noeud}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{liste_chainee_mot_8h_a48d3abf4434d0937e173bd08f2013174}\label{liste_chainee_mot_8h_a48d3abf4434d0937e173bd08f2013174}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+ajouter@{L\+C\+M\+\_\+ajouter}}
+\index{L\+C\+M\+\_\+ajouter@{L\+C\+M\+\_\+ajouter}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+ajouter()}{LCM\_ajouter()}}
+{\footnotesize\ttfamily void L\+C\+M\+\_\+ajouter (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} $\ast$}]{pl,  }\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+
+
+Procédure qui permet d\textquotesingle{}ajouter un Mot dans une liste de Mot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$pl} & une liste chainee de mot \\
+\hline
+{\em mot} & un mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{liste_chainee_mot_8h_af7799b59292caa6ce8e6a6e989aec98f}\label{liste_chainee_mot_8h_af7799b59292caa6ce8e6a6e989aec98f}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+est\+Vide@{L\+C\+M\+\_\+est\+Vide}}
+\index{L\+C\+M\+\_\+est\+Vide@{L\+C\+M\+\_\+est\+Vide}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+est\+Vide()}{LCM\_estVide()}}
+{\footnotesize\ttfamily int L\+C\+M\+\_\+est\+Vide (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}]{l }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si une liste de Mot est vide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & une liste chainée de mot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{liste_chainee_mot_8h_a3d6277a68ddff868c57110835ce81957}\label{liste_chainee_mot_8h_a3d6277a68ddff868c57110835ce81957}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+fixer\+Element@{L\+C\+M\+\_\+fixer\+Element}}
+\index{L\+C\+M\+\_\+fixer\+Element@{L\+C\+M\+\_\+fixer\+Element}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+fixer\+Element()}{LCM\_fixerElement()}}
+{\footnotesize\ttfamily void L\+C\+M\+\_\+fixer\+Element (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}]{pl,  }\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{liste_chainee_mot_8h_aabe00a716d1ebb9a2f9c211e99dd08e6}\label{liste_chainee_mot_8h_aabe00a716d1ebb9a2f9c211e99dd08e6}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+fixer\+Liste\+Suivante@{L\+C\+M\+\_\+fixer\+Liste\+Suivante}}
+\index{L\+C\+M\+\_\+fixer\+Liste\+Suivante@{L\+C\+M\+\_\+fixer\+Liste\+Suivante}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+fixer\+Liste\+Suivante()}{LCM\_fixerListeSuivante()}}
+{\footnotesize\ttfamily void L\+C\+M\+\_\+fixer\+Liste\+Suivante (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}]{pl,  }\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{liste_chainee_mot_8h_a38a81a963c2360d3d33c3c821e82f12e}\label{liste_chainee_mot_8h_a38a81a963c2360d3d33c3c821e82f12e}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+liste\+Chainee\+Mot@{L\+C\+M\+\_\+liste\+Chainee\+Mot}}
+\index{L\+C\+M\+\_\+liste\+Chainee\+Mot@{L\+C\+M\+\_\+liste\+Chainee\+Mot}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+liste\+Chainee\+Mot()}{LCM\_listeChaineeMot()}}
+{\footnotesize\ttfamily \hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} L\+C\+M\+\_\+liste\+Chainee\+Mot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction de création d\textquotesingle{}une liste chainée de Mot. 
+
+\begin{DoxyReturn}{Returns}
+L\+C\+M\+\_\+\+Liste\+Chainee\+Mot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{liste_chainee_mot_8h_acaa5debe132f93c99051dcfc2667bc03}\label{liste_chainee_mot_8h_acaa5debe132f93c99051dcfc2667bc03}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+obtenir\+Element@{L\+C\+M\+\_\+obtenir\+Element}}
+\index{L\+C\+M\+\_\+obtenir\+Element@{L\+C\+M\+\_\+obtenir\+Element}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+obtenir\+Element()}{LCM\_obtenirElement()}}
+{\footnotesize\ttfamily \hyperlink{struct_m___mot}{M\+\_\+\+Mot} L\+C\+M\+\_\+obtenir\+Element (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}]{l }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le mot du noeud d\textquotesingle{}une Liste de Mot. 
+
+\begin{DoxyPrecond}{Precondition}
+assert(!\+L\+C\+M\+\_\+est\+Vide(l)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em l} & une liste chainee de mot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{liste_chainee_mot_8h_a4c9b5ceac62db82dd2124400f0bc1e9d}\label{liste_chainee_mot_8h_a4c9b5ceac62db82dd2124400f0bc1e9d}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+obtenir\+Liste\+Suivante@{L\+C\+M\+\_\+obtenir\+Liste\+Suivante}}
+\index{L\+C\+M\+\_\+obtenir\+Liste\+Suivante@{L\+C\+M\+\_\+obtenir\+Liste\+Suivante}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+obtenir\+Liste\+Suivante()}{LCM\_obtenirListeSuivante()}}
+{\footnotesize\ttfamily \hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} L\+C\+M\+\_\+obtenir\+Liste\+Suivante (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot}}]{l }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir la liste suivante du noeud courant d\textquotesingle{}une liste de Mot. 
+
+\begin{DoxyPrecond}{Precondition}
+assert (!\+L\+C\+M\+\_\+est\+Vide(l)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em l} & une liste chainee de mot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+C\+M\+\_\+\+Liste\+Chainee\+Mot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{liste_chainee_mot_8h_a12901b4b1cb7839dba703af8a2f396d9}\label{liste_chainee_mot_8h_a12901b4b1cb7839dba703af8a2f396d9}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+supprimer@{L\+C\+M\+\_\+supprimer}}
+\index{L\+C\+M\+\_\+supprimer@{L\+C\+M\+\_\+supprimer}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+supprimer()}{LCM\_supprimer()}}
+{\footnotesize\ttfamily void L\+C\+M\+\_\+supprimer (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} $\ast$}]{pl }\end{DoxyParamCaption})}
+
+
+
+Procédure qui permet de supprimer une liste de Mot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$pl} & une liste chainee de mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{liste_chainee_mot_8h_a97130b98ff71c8a42bd3434209a5503a}\label{liste_chainee_mot_8h_a97130b98ff71c8a42bd3434209a5503a}} 
+\index{liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}!L\+C\+M\+\_\+supprimer\+Tete@{L\+C\+M\+\_\+supprimer\+Tete}}
+\index{L\+C\+M\+\_\+supprimer\+Tete@{L\+C\+M\+\_\+supprimer\+Tete}!liste\+Chainee\+Mot.\+h@{liste\+Chainee\+Mot.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+M\+\_\+supprimer\+Tete()}{LCM\_supprimerTete()}}
+{\footnotesize\ttfamily void L\+C\+M\+\_\+supprimer\+Tete (\begin{DoxyParamCaption}\item[{\hyperlink{liste_chainee_mot_8h_ad50c59d1ac1fa184aba663121d8e4087}{L\+C\+M\+\_\+\+Liste\+Chainee\+Mot} $\ast$}]{pl }\end{DoxyParamCaption})}
+
+
+
+Procédure qui permet de supprimer le noeud courant (la tête de la liste) d\textquotesingle{}une liste de Mot. 
+
+\begin{DoxyPrecond}{Precondition}
+assert (!\+L\+C\+M\+\_\+est\+Vide($\ast$pl)) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$pl} & une liste chainee de mot \\
+\hline
+\end{DoxyParams}

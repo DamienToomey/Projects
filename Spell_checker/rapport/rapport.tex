@@ -1,0 +1,75 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[latin1]{inputenc} % encodage du fichier d'entrée
+\usepackage[T1]{fontenc} % encodage de la fonte
+\usepackage{pgf}
+\usepackage{classeRapport}
+\usepackage{scrextend}
+\usepackage{algorithme}
+\usepackage{listings}
+\usepackage{fixfoot}
+
+
+
+
+
+\DeclareFixedFootnote{\repnote}{J'utilise un entier ici et non un
+  naturel pour la position depuis le début de l'entrée standard car
+  cette position doit commencer à 0 donc j'initialise cette position à
+  -1 dans le main}
+
+\begin{document}
+\PageDeGarde
+{logo.png} % image sur la page de garde
+{ASIspell} % titre principal
+{Projet Correcteur Orthographique} % sous-titre
+{Dounia \textsc{BOUTAYEB}\\ Thibault \textsc{SAURON}\\ Matthias
+  \textsc{SESBOÜÉ}\\ Damien \textsc{TOOMEY}} % nom
+{Algorithmique avancée et programmation C - ASI - 2017-2018} % bas de page
+
+\Page{INSALogo}{logo.png} % logo de bas de page (en bas a droite)
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introduction}
+\input{src/Introduction.tex}
+
+\newpage
+\section{Résumé des séances}
+\input{src/Resume_des_seances.tex}
+
+\newpage
+\section{Choix de la structure de donnée du Dictionnaire}
+\input{src/Choix_de_la_structure_de_donnee_du_Dictionnaire.tex}
+
+\newpage
+\section{Explication du Type Dictionnaire}
+\input{src/Explication_du_Type_Dictionnaire.tex}
+
+\newpage
+\section{Analyse}
+\input{src/Analyse.tex}
+
+\newpage
+\section{Conception préliminaire}
+\input{src/Conception_preliminaire.tex}
+
+\newpage
+\section{Conception détaillée}
+\input{src/Conception_detaillee.tex}
+
+\newpage
+\section{Code C}
+\input{src/Code_C.tex}
+
+\newpage
+\section{Tests unitaires}
+\input{src/Tests_unitaires.tex}
+
+\newpage
+\section{Conclusion}
+\input{src/Conclusion.tex}
+
+\end{document}

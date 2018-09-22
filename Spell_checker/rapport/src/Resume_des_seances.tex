@@ -1,0 +1,196 @@
+\subsection{Déroulement du projet}
+
+\begin{description}
+\item[25/10/2017 : ] Découverte du sujet et du
+  groupe. \\Création du projet sur la plateforme
+  \url{https://monprojet.insa-rouen.fr}.
+  \\Conception de la première
+  version des TAD Mot,
+  Dictionnaire et
+  CorrecteurOrthograpique.
+
+\item[08/11/2017 : ] Travail sur l'analyse descendante.
+
+\item[15/11/2017 : ] Remise en cause des TAD.
+  \\ Suppression de plusieurs fonctions et procédures
+  non nécessaires dans le cadre de notre projet. \\
+  Ajouts et modifications de plusieurs fonctions et procédures.\\
+  Le TAD Mot contient les opérations permettant de faire
+  toutes les modifications possibles sur un mot. \\
+  Le TAD CorrecteurOrhtographique contient toutes les
+  opérations de correction. Ces opérations sont en accord
+  avec le fait que l'on traitera le texte à corriger
+  comme un flux. On parcours le texte et on corrige mot
+  par mot. On ne traite donc plus une liste de mots
+  incorrectes.
+  Choix de la structure de donnée du type Dictionnaire. \\
+  On choisit la structure de donnée dynamique arbre N-aire, que
+  l'on stockera à la manière d'un arbre binaire.
+
+\item[22/11/2017 : ] Remise en cause de l'analyse descendante. \\
+  Re-manipulation de l'analyse descendante, ajout de
+  toutes les fonctions et procédures des TAD et
+  suppression des procédures d'affichage. \\
+  Séparation du travail pour la conception détaillée :
+  \begin{itemize}
+  \item[.] \emph{Damien} travaille sur les
+    fonctions et procédures
+    "queFaireEnFonctionDeCommandeDEntree",
+    "afficherAide", ainsi que les fonctions et
+    procédures du TAD
+    "CorrecteurOrthographique".
+  \item[.] \emph{Dounia} travaille sur les
+    fonctions et procédures du TAD Mot.
+  \item[.] \emph{Thibault} travaille sur les
+    fonctions et procédures du TAD
+    Dictionnaire.
+  \item[.] \emph{Matthias} travaille avec \emph{Damien}
+    sur les fonctions et procédures du TAD
+    CorrecteurOrthographique, ainsi que sur le
+    procédures "afficherMotBienEcrit",
+    "afficherCorrectionsEtPosMot",
+    "correctionDuMot" et "corrigerMot".
+  \end{itemize}
+
+\item[29/11/2017 : ] Analyse descendante finalisée, conception
+  détaillée en cours. Séparation du travail d'implémentation, à
+  faire dès que la conception détaillée est terminée. \\
+  Séparation du travail pour la conception détaillée :
+  \begin{itemize}
+  \item[.] \emph{Damien} développe les tests
+    unitaires pour le TAD Mot (sauf celui de la
+    fonction "obtenirMotEntreeStandard").
+  \item[.] \emph{Dounia} développe les fonctions
+    et procédures du TAD Ensemble.
+  \item[.] \emph{Thibault} développe les tests
+    unitaires pour le TAD
+    CorrecteurOrhtographique ainsi que les
+    fonctions et procédures du TAD
+    Dictionnaire.
+  \item[.] \emph{Matthias} développe les tests
+    unitaires pour le TAD Dictionnaire et celui
+    pour la fonction "obtenirMotEntreeStandard" ainsi que
+    les fonctions et procédures du TAD
+    CorrecteurOrthographique.
+  \end{itemize}
+
+\item[06/12/2017 : ] Nous continuons à développer en C et
+  ajout de quelques modifications. \\
+  Modifications apportées :
+  \begin{itemize}
+  \item[.] Définition du SDD pour le type
+    CorrecteurOrthographique : une structure
+    contenant un Mot et un Dictionnaire. En
+    conséquence nous avons ajouté des fonctions
+    accesseurs pour obtenir le Dictionnaire et le
+    Mot.
+  \item[.] Définition du SDD pour le type
+    Ensemble : une structure contenant deux
+    champs, un pour les éléments et un autre pour le
+    nombre d'éléments.
+  \item[.] Nous avons choisi de développer notre
+    propre type ListeChaineeMot étant donné que
+    nous n'utilisons qu'une liste chaînée de Mot
+    et que nous n'avons besoin que de certaines
+    fonctions et procédures.
+  \end{itemize}
+  Séparation du travail :
+  \begin{itemize}
+  \item[.] \emph{Damien} et \emph{Thibault}
+    développent ensemble les TAD ArbreNaire et
+    Dictionnaire.
+  \item[.] \emph{Dounia} développe les TAD
+    ListeChaineeMot et Mot.
+  \item[.] \emph{Matthias} développe le TAD
+    CorrecteurOrthographique.
+  \end{itemize}
+
+\item[13/12/2017 : ] Nous continuons à développer en C. Suite
+  à une mauvaise organisation de départ, nous devons vérifier
+  les conventions de nommage pour nos codes soient cohérents
+  entre eux.\\
+  Séparation du travail :
+  \begin{itemize}
+  \item[.] \emph{Damien} et \emph{Thibault}
+    développent ensemble les procédures de
+    sérialisation et de désérialisation.
+  \item[.] \emph{Dounia} développe des tests unitaires.
+  \item[.] \emph{Matthias} vérifie que les
+    conventions de nommage sont bien respectées
+    et travaille ensuite sur les tests
+    unitaires.
+  \end{itemize}
+
+\item[20/12/2017 : ] Le développement de base est terminé, le
+  code général ainsi que les tests unitaires sont
+  développés. La séance consistait donc à faire passer les
+  tests unitaires et donc commencer à corriger les code. \\
+  Cette séance était la dernière. L'objectif pour la fin de la
+  semaine est de finir le code.
+\end{description}
+
+\subsection{Choix des conventions de nommage dans les .c et .h}
+
+Une fois la conception détaillée terminée, nous avons dû choisir des
+conventions de nommage pour pouvoir développer notre partie du code
+chacun de notre côté tout en restant cohérent avec le code des
+autres.
+Nous avons donc choisie les conventions suivantes :
+
+\begin{description}
+\item[TAD Mot : ] Nous adopterons les conventions suivantes :
+  \begin{itemize}
+  \item[.] Le type Mot sera nommé : \emph{M\_Mot}.
+  \item[.] Les fonctions et procédures du TAD
+    Mot seront nommées de la façon suivante : \\
+    \emph{M\_nomDeLaFonction ou M\_nomDeLaProcédure}.
+  \end{itemize}
+\item[TAD Dictionnaire : ] Nous adopterons les conventions suivantes :
+  \begin{itemize}
+  \item[.] Le type Dictionnaire sera nommé :
+    \emph{D\_Dictionnaire}.
+  \item[.] Les fonctions et procédures du TAD
+    Dictionnaire seront nommées de la façon
+    suivante : \\
+    \emph{D\_nomDeLaFonction ou D\_nomDeLaProcédure}.
+  \end{itemize}
+\item[TAD CorrecteurOrthographique : ] Nous adopterons les
+  conventions suivantes :
+  \begin{itemize}
+  \item[.] Le type CorrecteurOrthographique sera
+    nommé :
+    \emph{CO\_CorrecteurOrthographique}.
+  \item[.] Les fonctions et procédures du TAD
+    CorrecteurOrthographique seront nommées de
+    la façon suivante : \\
+    \emph{CO\_nomDeLaFonction ou CO\_nomDeLaProcédure}.
+  \end{itemize}
+\item[TAD Ensemble : ] Nous adopterons les conventions suivantes :
+  \begin{itemize}
+  \item[.] Le type Ensemble sera nommé :
+    \emph{E\_Ensemble}.
+  \item[.] Les fonctions et procédures du TAD
+    Ensemble seront nommées de la façon suivante
+    : \\
+    \emph{E\_nomDeLaFonction ou E\_nomDeLaProcédure}.
+  \end{itemize}
+\item[TAD ListeChaineeMot : ] Nous adopterons les conventions
+  suivantes :
+  \begin{itemize}
+  \item[.] Le type ListeChaineeMot sera nommé :
+    \emph{LCM\_ListeChaineeMot}.
+  \item[.] Les fonctions et procédures du TAD
+    ListeChaineeMot seront nommées de la façon
+    suivante : \\
+    \emph{LCM\_nomDeLaFonction ou LCM\_nomDeLaProcédure}.
+  \end{itemize}
+\item[TAD ArbreN : ] Nous adopterons les conventions suivantes :
+  \begin{itemize}
+  \item[.] Le type ArbreN sera nommé : \emph{AbN\_ArbreN}.
+  \item[.] Les fonctions et procédures du TAD
+    ArbreN seront nommées de la façon suivante :
+    \\
+    \emph{AbN\_nomDeLaFonction ou Abn\_nomDeLaProcédure}.
+  \end{itemize}
+
+\end{description}

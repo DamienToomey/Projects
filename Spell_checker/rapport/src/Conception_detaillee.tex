@@ -1,0 +1,732 @@
+\subsection{Fonctions et procédures liées au TAD Mot}
+
+\subsubsection{Partie Privée}
+\begin{algorithme}
+  \constante{LETTRES\_SPECIALES\_AUTORISEES}
+  {"ÀÂÄÆÇÈÉÊËÌÎÏÒÓÔÖÙÚÛÜàâäæçèéêëìîïòôöùûü"}
+  \constante{LONGUEUR\_LETTRES\_SPECIALES\_AUTORISEES}{38}
+\end{algorithme} 
+
+\subsubsection{Partie Publique}
+\begin{algorithme}
+
+  \begin{enregistrement}{Mot}
+    \champEnregistrement{laChaine}{\chaine}
+    \champEnregistrement{longueur}{\naturel}
+  \end{enregistrement}\\
+
+  \fonction {M.longueur}{mot : Mot}{\naturel}
+  {}
+  {
+    \retourner{longueur(mot.laChaine)}
+  }\\
+  \fonction {M.obtenirLongueur}{mot : Mot}{\naturel}
+  {}
+  {
+    \retourner{mot.longueur}
+  }\\
+  
+\end{algorithme}
+
+Nous pouvons remarquer ici que les deux dernières fonctions semblent réaliser la même action. Or dans le premier cas ("M.longueur") la fonction est une fonction d'encapsulation qui utilise la fonction "strlen" de la bibliothèque C "string.h". Nous l'utilisons une fois dans le code pour fixer la longueur du mot la première fois. Ensuite nous ne nous servons plus que de l'accesseur "M.obtenirLongueur" qui renvoie le champ "longueur" de la structure Mot. En C, cet accesseur, nous permettra d'avoir accès à la longueur d'un mot en $\mathcal{O}$(1). \\
+
+\begin{algorithme} 
+
+  \fonctionAvecPreconditions{M.obtenirIemeCaractere}{mot : Mot, pos :
+    \naturelNonNul}{Mot}{1 $\leq$ pos $\leq$ M.obtenirLongueur(mot)}
+  {}
+  {
+    \retourner{mot[pos]}
+  }\\
+
+  \procedureAvecPreconditions{M.fixerIemeCaractere}{\paramEntreeSortie{mot
+      : Mot}, \paramEntree{pos : \naturelNonNul, lettre :
+      \caractere}}{1 $\leq$ pos $\leq$ M.obtenirLongueur(mot)+1}
+  {}
+  {
+    \affecter{mot[pos]}{lettre}
+  }\\
+
+  \fonctionAvecPreconditions{M.remplacerLettre}{mot : Mot, pos :
+    \naturelNonNul, lettre : \caractere}{Mot}{1 $\leq$ pos $\leq$
+    M.obtenirLongueur(mot)}
+  {}
+  {
+    \instruction{M.fixerIemeCaractere(mot, pos, lettre)}
+    \retourner{mot}
+  }\\
+
+  \fonctionAvecPreconditions{M.inverserDeuxLettresConsecutives}{mot :
+    Mot, pos : \naturelNonNul}{Mot}{1 $\leq$ pos $\leq$
+    M.obtenirLongueur(mot)-1}
+  {temp : \caractere}
+  {
+    \affecter{temp}{M.obtenirIemeCaractere(mot,pos)}
+    \instruction {M.fixerIemeCaractere(mot, pos,
+      M.obtenirIemeCaractere(mot,  pos+1))}
+    \instruction {M.fixerIemeCaractere(mot, pos+1, temp)}
+    \retourner{mot}
+  }\\
+
+
+  \fonctionAvecPreconditions{M.supprimerLettre}{mot : Mot, pos :
+    \naturelNonNul}{Mot}{1 $\leq$ pos $\leq$ M.obtenirLongueur(mot)}
+  {i : \naturelNonNul}
+  {
+    \pour{i}{pos}{M.obtenirLongueur(mot)}{}{
+      \instruction{M.fixerIemeCaractere
+        (mot, i, M.obtenirIemeCaractere(mot,i+1))}
+    }
+    \instruction{M.fixerLongueur(mot, M.obtenirLongueur(mot)-1)}
+    \instruction{M.fixerIemeCaractere(mot, M.obtenirLongueur(mot),
+      '\textbackslash 0')}
+    \retourner{mot}
+  }\\
+
+  \fonctionAvecPreconditions{M.insererLettre}{mot : Mot, lettre :
+    \caractere, pos : \naturelNonNul}{Mot}{1 $\leq$ pos $\leq$
+    M.obtenirLongueur(mot)+1}
+  {i : \naturelNonNul}
+  {
+    \pour{i}{longueur(mot)}{pos}{-1}{
+      \instruction{M.fixerIemeCaractere(mot, i+1,
+        M.obtenirIemeCaractere(mot, i))}
+    }
+    \instruction{M.fixerIemeCaractere(mot, pos, lettre)}
+    \instruction{M.fixerLongueur(mot, M.obtenirLongueur(mot)+1)}
+    \instruction{M.fixerIemeCaractere(mot, M.obtenirLongueur(mot),
+      '\textbackslash 0')}
+    \retourner{mot}
+  }\\
+
+  \fonction{M.estUneLettre}{c : \caractere}{\booleen}
+  {{i : \naturelNonNul}\\
+  {estPresent: \booleen}}
+  {
+    \affecter{i}{1}
+    \affecter{estPresent}{FAUX}
+
+    \tantque{(i<=LONGUEUR\_LETTRES\_SPECIALES\_AUTORISEES) et (estPresent=FAUX)}
+    {
+
+      \sialors {(LETTRES\_SPECIALES\_AUTORISEES[i]=c)} {
+        \affecter{estPresent}{VRAI}
+      }
+      \affecter{i}{i+1}
+    }
+    \retourner{(estPresent ou ((c>='a') et (c<='z')) ou ((c>='A') et
+      (c<='Z')) ou (c='-'))}
+  }\\
+
+  \procedure
+  {M.obtenirMotEntreeStandard\footnote{Vous remarquerez que nous n'avons pas écrit de test unitaire pour cette procédure car nous ne savions pas comment faire. En effet, il aurait fallu exécuter le programme avec des paramètres au sein même du test unitaire. En revanche, nous avons testé cette procédure "à la main" dans de nombreux cas et elle passe nos tests}}{\paramEntreeSortie{posDepuisDebutFlux :
+      \entier \repnote, mot : Mot}, \paramSortie{arret : \booleen}}
+  {c : caractere}
+  {
+
+    \affecter{posDepuisDebutFlux}{posDepuisDebutFlux+naturelEnEntier(
+      M.obtenirLongueur(mot))+1}
+    \affecter{mot}{""}
+    \affecter{c}{obtenirCaractereSuivantEntreeStandard()}
+
+    \tantque{(non M.estUneLettre(c) et non estLaFinEntreeStandard(c))}{
+      \affecter{c}{obtenirCaractereSuivantEntreeStandard()}
+      \affecter{posDepuisDebutFlux}{posDepuisDebutFlux+1};
+    }
+
+    \tantque{M.estUneLettre(c) et non estLaFinEntreeStandard(c)}{
+      \instruction{concatener(mot, majusculeEnMinuscule(caractereEnChaine(c)))}
+      \affecter{c}{obtenirCaractereSuivantEntreeStandard()}
+    }
+
+    \instruction{fixerLongueur(mot, longueur(mot))}
+
+    \sialors{estLaFinEntreeStandard(c)}{
+      \affecter{arret}{VRAI}
+    }
+  }\\
+
+  \procedure {M.fixerLaChaine}{\paramEntreeSortie{mot :
+      Mot}, \paramEntree{chaine : \chaine}}
+  {}
+  {
+    \affecter{mot.laChaine}{chaine}
+  }\\
+
+  \fonctionAvecPreconditions {M.obtenirLaChaine}{mot : Mot}{\chaine}
+  {M.obtenirLongueur(mot)>=0}
+  {}
+  {
+    \retourner{mot.laChaine}
+  }\\
+
+  \procedure {M.fixerLongueur}{\paramEntreeSortie{mot : Mot},
+    \paramEntree{length : \naturel}}
+  {}
+  {
+    \affecter{mot.longueur}{length}
+  }\\
+
+  \fonction {M.sontEgaux}{mot1, mot2 : Mot}{\booleen}
+  {}
+  {
+    \retourner{M.obtenirLaChaine(mot1)=M.obtenirLaChaine(mot2)}
+  }
+  
+\end{algorithme}
+
+\subsection{Fonctions et procédures liées au TAD Dictionnaire}
+
+\subsubsection{Partie Privée}
+
+\begin{algorithme}
+
+  \constante{CaratereMotValide}{'*'}
+  \constante{CaratereMotNonValide}{','}
+  \constante{CaratereFilsNonVide}{'/'}
+  \constante{CaratereFilsVide}{'.'}
+  \constante{CaratereFrereNonVide}{':'}
+  \constante{CaratereFrereVide}{';'}\\
+
+  \procedure{serialiserParcoursRGDdico}{\paramEntree{dico :
+      D.Dictionnaire}, \paramEntreeSortie{fichierSDDDico : Fichier Texte}}
+  {}
+  {
+
+    \sialors{non D.estVide(dico)}{
+      \instruction{ecrireCaractere(fichierSDDDico, AbN.obtenirChar(dico))}
+
+      \sialorssinon{AbN.obtenirBool(dico)=VRAI}{
+        \instruction{ecrireCaractere(fichierSDDDico, CaratereMotValide)}
+      }
+      {
+        \instruction{ecrireCaractere(fichierSDDDico, CaratereMotNonValide)}
+      }
+
+      \sialorssinon{AbN.estVide(AbN.obtenirFils(dico))}{
+        \instruction{ecrireCaractere(fichierSDDDico, CaratereFilsVide}
+      }
+      {
+        \instruction{ecrireCaractere(fichierSDDDico, CaratereFilsNonVide)}
+        \instruction{serialiserParcoursRGDdico(AbN.obtenirFils(dico),
+          fichierSDDDico)}
+      }
+
+      \sialorssinon {AbN.estVide(AbN.obtenirFrere(dico))}{
+        \instruction{ecrireCaractere(fichierSDDDico, CaratereFrereVide}
+      }
+      {
+        \instruction{ecrireCaractere(fichierSDDDico, CaratereFrereNonVide)}
+        \instruction{serialiserParcoursRGDdico(AbN.obtenirFrere(dico),
+          fichierSDDDico)}
+      }
+    }
+  }
+
+  \procedure{deserialiser}{\paramEntreeSortie{dico :
+      Dictionnaire}, \paramEntree{fichierSDDDico : Fichier Texte}}
+  {{temp : Dictionnaire}\\
+    {c : \caractere}}
+  {
+    \instruction{lireCaractere(fichierSDDDico, c)}
+    \sialors {non finFichier(fichierSDDDico}{
+
+      \instruction{AbN.fixerChar(dico, c)}
+
+      \instruction{lireCaractere(fichierSDDDico, c)}
+
+      \sialorssinon {c=CaratereMotValide} {
+        \instruction{AbN.fixerBool(dico, VRAI)}
+      }
+      {
+        \instruction{AbN.fixerBool(dico, FAUX)}
+      }
+
+      \instruction{lireCaractere(fichierSDDDico, c)}
+
+      \sialors {c=CaratereFilsNonVide}{
+        \affecter{temp}{D.creerDico()}
+        \instruction{deserialiser(temp, fichierSDDDico)}
+        \affecter{dico.Fils}{temp}
+      }
+
+      \instruction{lireCaractere(fichierSDDDico, c)}
+      \sialors {c=CaratereFrereNonVide}{
+        \affecter{temp}{D.creerDico()}
+        \instruction{deserialiser(temp, fichierSDDDico)}
+        \affecter{dico.Frere}{temp}
+      }
+    }
+  }
+\end{algorithme}
+
+\subsubsection{Partie publique}
+
+\begin{algorithme}
+  \fonction {D.creerDico}{}{Dictionnaire}
+  {dico : Dictionnaire}
+  {
+    \affecter{dico}{AbN.creerArbreNonInit()}
+    \retourner{dico}
+  }\\
+
+  \fonction {D.estVide}{dico : Dictionnaire}{\booleen}
+  {}
+  {
+    \retourner{AbN.estVide(dico)}
+  }\\
+
+  \procedure {D.insererMot}{\paramEntree{mot :
+      Mot}, \paramEntreeSortie{dico : Dictionnaire}}
+  {{temp, newNoeud, newNoeudTemp : Dictionnaire}\\
+    {tempMot : Mot}}
+  {
+    \sialorssinon{D.estVide(dico)}{
+      \affecter{dico}{D.creerDico()}
+      \instruction{AbN.fixerChar(dico, M.obtenirIemeCaractere(tempMot,0))}
+      \instruction{AbN.fixerBool(dico, M.obtenirLongueur(tempMot)=1)}
+
+      \sialors{M.obtenirLongueur(tempMot)>1}{
+        \affecter{temp}{AbN.obtenirFils(dico)}
+        \instruction{D.insererMot(temp,M.supprimerLettre(tempMot,0))}
+        \instruction{AbN.fixerFils(dico, temp)}
+      }
+    }
+    {
+
+      \sialorssinon{AbN.obtenirChar(dico) = M.obtenirIemeCaractere(tempMot,0)}{
+
+        \sialorssinon{M.obtenirLongueur(tempMot) = 1}{
+          \instruction{AbN.fixerBool (dico, VRAI)}
+        }
+        {
+          \affecter{temp}{AbN.obtenirFils(dico)}
+          \instruction{D.insererMot(temp,M.supprimerLettre(tempMot,0))}
+          \instruction{AbN.fixerFils(dico, temp)}
+        }
+
+      }
+      {
+        \sialorssinon{AbN.obtenirChar(dico) <
+          M.obtenirIemeCaractere(tempMot,0)} {
+          \affecter{temp}{AbN.obtenirFrere(dico)}
+          \instruction{D.insererMot(temp,tempMot)}
+          \instruction{AbN.fixerFrere(dico, temp)}
+        }
+        {
+          \affecter{temp}{dico}
+          \affecter{newNoeud}{D.creerDico()}
+          \instruction{AbN.fixerChar (newNoeud,
+            M.obtenirIemeCaractere(tempMot,0))}
+          \instruction{AbN.fixerBool (newNoeud, M.obtenirLongueur(tempMot)=1)}
+
+          \sialorssinon{M.obtenirLongueur(tempMot)=1}{
+
+            \instruction{AbN.fixerFrere(newNoeud, temp)}
+            \instruction{AbN.fixerFils(newNoeud, newNoeudTemp)}
+            \affecter{dico}{newNoeud}
+          }
+          {
+            \affecter{newNoeudTemp}{AbN.obtenirFils(newNoeud)}
+            \instruction{D.insererMot(newNoeudTemp,
+              M.supprimerLettre(tempMot,0))
+            }
+            \instruction{AbN.fixerFrere(newNoeud, temp)}
+            \instruction{AbN.fixerFils(newNoeud, newNoeudTemp)}
+            \affecter{dico}{newNoeud}
+          }
+        }
+      }
+    }
+  }\\
+
+  \fonction {D.estPresent}{mot : Mot, dico : Dictionnaire}{\booleen}
+  {temp : Mot}
+  {
+    \sialorssinon{D.estVide(dico)}{
+      \retourner{FAUX}
+    }
+    {
+
+      \sialorssinon{((M.obtenirLongueur(temp)=1) et
+        (AbN.obtenirChar(dico) = M.obtenirIemeCaractere(temp,0)) et
+        (AbN.obtenirBool(dico)=VRAI))}{
+        \retourner{VRAI}
+      }
+      {
+
+        \sialorssinon{((AbN.obtenirChar(dico) =
+          M.obtenirIemeCaractere(temp,0) et (M.obtenirLongueur(temp)>1)))}{
+          \retourner{D.estPresent(AbN.obtenirFils(dico),
+            M.supprimerLettre(temp,0))}
+        }
+        {
+
+          \sialorssinon {(AbN.obtenirChar(dico) <
+            M.obtenirIemeCaractere(temp,0))}{
+            \retourner{D.estPresent(AbN.obtenirFrere(dico),temp)}
+          }
+          {
+            \retourner{FAUX}
+          }
+        }
+      }
+    }
+  }\\
+
+  \procedure{D.sauvegarderDico}{\paramSortie{fichierSDDDico : Fichier
+      Texte}, \paramEntree{dico : D.Dictionnaire}}
+  {}
+  {
+    \instruction{ouvrir(fichierSDDDico, ecriture)}
+    \instruction{serialiserParcoursRGDdico(dico, fichierSDDDico)}
+    \instruction{fermer(fichierSDDDico)}
+  }
+
+  \fonctionAvecPreconditions{D.chargerDico}{nomFichier : \chaine,
+    fichierSDDDico : Fichier Texte}{Dictionnaire}{F.fichierExiste(nomFichier)}
+  {dico : Dictionnaire}
+  {
+    \instruction{ouvrir(fichierSDDDico, lecture)}
+    \affecter{dico}{D.creerDico()}
+    \instruction{deserialiser(dico, fichierSDDDico)}
+    \instruction{fermer(fichierSDDDico)}
+
+    \retourner{dico}
+  }
+
+\end{algorithme}
+
+
+\subsection{Fonctions et procédures liées au TAD CorrecteurOrthographique}
+
+\subsubsection{Partie privée}
+\begin{algorithme}
+
+  \constante{LETTRES\_SPECIALES\_AUTORISEES}
+  {"ÀÂÄÆÇÈÉÊËÌÎÏÒÓÔÖÙÚÛÜàâäæçèéêëìîïòôöùûü"}
+  \constante{LONGUEUR\_LETTRES\_SPECIALES\_AUTORISEES}{38}\\
+
+  \procedure {ajouterSiCorrecte}{\paramEntreeSortie{corrections :
+      Ensemble<Mot>}, \paramEntree{co : CorrecteurOrthographique}}{}{
+    \sialors{Co.estBienOrthographie(co)}
+    {\instruction{E.ajouter(corrections, obtenirMot(co))}
+    }
+  }\\
+
+\end{algorithme}
+
+\subsubsection{Partie Publique}
+
+\begin{algorithme}
+
+  \fonctionAvecPreconditions {CO.proposerCorrection}{co :
+    CorrecteurOrthographique}{Ensemble<Mot>}{non
+    CO.estBienOrthographie(co)}
+  {{i,k : \naturelNonNul}\\
+    {j : \caractere}\\
+    {temp, mot : Mot}\\
+    {dico : Dictionnaire}\\
+    {coTest : CorrecteurOrthographique}\\
+    {corrections : Ensemble}}
+  {
+    \affecter{coTest}{CO.correcteurOrthographique()}
+    \affecter{mot}{CO.obtenirMot(co)}
+    \affecter{dico}{CO.obtenirDictionnaire(co)}
+    \affecter{corrections}{E.ensemble()}
+
+    \sialors{M.obtenirLongueur(mot)>=2}{
+     \pour{i}{1}{M.obtenirLongueur(mot)}{}{
+      \affecter{temp}{M.inverserDeuxLettreConsecutives(mot, i)}
+      \instruction{CO.fixerMot(coTest,temp)}
+      \instruction{ajouterSiCorrecte(corrections,coTest)}
+     }
+     \pour{i}{1}{M.obtenirLongueur(mot)+1}{}{
+      \affecter{temp}{M.supprimerLettre(mot, i)}
+      \instruction{CO.fixerMot(coTest,temp)}
+      \instruction{ajouterSiCorrecte(corrections,coTest)}
+     }
+    }
+    \pour{j}{'a'}{'z'}{}{
+      \pour{i}{1}{M.obtenirLongueur(mot)}{}{
+        \affecter{temp}{M.remplacerLettre(mot, i, j)}
+        \instruction{CO.fixerMot(coTest,temp)}
+        \instruction{ajouterSiCorrecte(corrections,coTest)}
+      }
+      }
+      \tantque{k <= LONGUEUR\_LETTRES\_SPECIALES\_AUTORISEES}{
+        \pour{i}{1}{M.obtenirLongueur(mot)+1}{}{
+          \affecter{temp}{M.remplacerLettre(mot, i,
+            LETTRES\_SPECIALES\_AUTORISEES[k])}
+        \instruction{CO.fixerMot(coTest,temp)}
+        \instruction{ajouterSiCorrecte(corrections,coTest)}
+      }
+      \instruction{k = k+1}
+    }
+     \pour{j}{'a'}{'z'}{}{
+      \pour{i}{1}{M.obtenirLongueur(mot)+1}{}{
+        \affecter{temp}{M.insererLettre(mot, j, i)}
+        \instruction{CO.fixerMot(coTest,temp)}
+        \instruction{ajouterSiCorrecte(corrections,coTest)}
+      }
+    }
+     \tantque{k <= LONGUEUR\_LETTRES\_SPECIALES\_AUTORISEES}{
+        \pour{i}{1}{M.obtenirLongueur(mot)+1}{}{
+        \affecter{temp}{M.insererLettre(mot,
+          LETTRES\_SPECIALES\_AUTORISEES[k], i)}
+        \instruction{CO.fixerMot(coTest,temp)}
+        \instruction{ajouterSiCorrecte(corrections,coTest)}
+      }
+      \instruction{k = k+1}
+    }
+
+    \retourner{corrections}
+  }\\
+
+  \fonction {CO.estBienOrthographie}{co : CorrecteurOrthographique}{\booleen}
+  {}
+  {
+    \retourner{CO.estPresent(obtenirMot(co), CO.obtenirDictionnaire(co))}
+  }\\
+
+  \fonction{CO.obtenirMot}{co : CorrecteurOrthographique}{Mot}
+  {}
+  {
+    \retourner{co.mot}
+  }\\
+
+  \fonction{CO.obtenirDictionnaire}{co : CorrecteurOrthographique}{Dictionnaire}
+  {}
+  {
+    \retourner{co.dico}
+  }\\
+
+  \fonction{CO.correcteurOrthographique}{}{CorrecteurOrthographique}
+  {{co : CorrecteurOrthographique}\\
+    {mot : Mot}\\
+    {dico : Dictionnaire}}
+  {
+    \instruction{M.fixerLaChaine(mot, "")}
+    \instruction{M.fixerLongueur(mot, 0)}
+    \instruction{CO.fixerMot(co, mot)}
+
+    \affecter{dico}{NULL}
+    \instruction{CO.fixerDictionnaire(co, dico)}
+
+    \retourner{co}
+
+  }
+
+  \procedure{CO.fixerMot}{\paramEntreeSortie{co :
+      CorrecteurOrthographique}, \paramEntree{mot : Mot}}
+  {}
+  {
+    \affecter{co.mot}{mot}
+  }
+
+  \procedure{CO.fixerDictionnaire}{\paramEntreeSortie{co :
+      CorrecteurOrthographique}, \paramEntree{dico : Dictionnaire}}
+  {}
+  {
+    \affecter{co.dico}{dico}
+  }
+
+\end{algorithme}
+
+\subsection{Fonctions et procédures liées au TAD ArbreN}
+
+\begin{algorithme}
+
+  \fonction{AbN.creerArbreNonInit}{}{ArbreN}
+  {temp:ArbreN}
+  {
+    \affecter{temp.Fils}{NULL}
+    \affecter{temp.Frere}{NULL}
+    \affecter{temp.lettre}{"caractereVide"}
+    \affecter{temp.motValide}{0}
+    \retourner{temp}
+  }\\
+
+  \fonction{AbN.estVide}{arbre :ArbreN}{\booleen}
+  {}
+  {
+    \retourner{(arbre=NULL) ou (arbre.lettre="caractereNul")}
+  }\\
+
+  \fonctionAvecPreconditions{AbN.obtenirBool}{arbre :
+    ArbreN}{\booleen}{non AbN.estVide(arbre)}
+  {}
+  {
+    \retourner{(arbre.motValide)}
+  }\\
+
+  \fonctionAvecPreconditions{AbN.obtenirChar}{arbre :
+    ArbreN}{\caractere}{non AbN.estVide(arbre)}
+  {}
+  {
+    \retourner{(arbre.lettre)}
+  }\\
+
+  \procedureAvecPreconditions {AbN.fixerBool}{\paramEntreeSortie{arbre
+      : ArbreN} \paramEntree{valide : \booleen}}{non AbN.estVide(arbre)}
+  {}
+  {
+    \affecter{arbre.motValide}{valide}
+  }
+
+  \procedureAvecPreconditions {AbN.fixerChar}{\paramEntreeSortie{arbre
+      : ArbreN} \paramEntree{ lalettre : \booleen}}{non AbN.estVide(arbre)}
+  {}
+  {
+    \affecter{arbre.lettre}{lalettre}
+  }
+
+  \procedureAvecPreconditions {AbN.fixerFils}{\paramEntreeSortie{arbre
+      : ArbreN} \paramEntree{fils : ArbreN}}{non AbN.estVide(arbre)}
+  {}
+  {
+
+    \affecter{arbre.Fils}{fils}
+  }
+
+  \procedureAvecPreconditions
+  {AbN.fixerFrere}{\paramEntreeSortie{arbre :
+      ArbreN} \paramEntree{frere : ArbreN}}{non AbN.estVide(arbre)}
+  {}
+  {
+    \affecter{arbre.Frere}{frere}
+  }
+
+  \fonctionAvecPreconditions{AbN.obtenirFils}{arbre :
+    ArbreN}{ArbreN}{non AbN.estVide(arbre)}
+  {}
+  {
+    \retourner{arbre.Fils}
+  }\\
+
+  \fonctionAvecPreconditions{AbN.obtenirFrere}{arbre :
+    ArbreN}{ArbreN}{non AbN.estVide(arbre)}
+  {}
+  {
+    \retourner{arbre.Frere}
+  }\\
+
+\end{algorithme}
+
+\subsection{Procédures d'affichage}
+
+\subsubsection{Partie privée}
+
+\begin{algorithme}
+  \constante{NOM\_FICHIER\_AIDE}{"./fichierAide.txt"}\\
+\end{algorithme}
+
+\subsubsection{Partie publique}
+
+\begin{algorithme}
+  \procedure
+  {A.afficherCorrectionEtPosMot}{\paramEntree{lesCorrections :
+      Ensemble<Mot>, leMot : Mot, pos : \naturel}}
+  {{i, nbCorrections : \naturel}\\
+    {mot : Mot}\\
+    {lesMotsCorrects : ListeChaineeMot}}
+  {
+    \affecter{lesMotsCorrects}{E.obtenirLesElements(lesCorrections)}
+    \affecter{nbCorrections}{E.cardinalite(lesCorrections)}
+
+    \ecrire{"\&" M.obtenirLaChaine(leMot), naturelEnChaine(nbCorrections), naturelEnChaine(pos)}
+
+    \pour{i}{0}{i<nbCorrections}{} {
+      \affecter{mot}{LCM.obtenirElement(lesMotsCorrects)}
+      \ecrire{M.obtenirLaChaine(mot)}
+      \affecter{lesMotsCorrects}{LCM.obtenirListeSuivante(lesMotsCorrects)}
+    }
+  }\\
+
+  \procedure {A.affichageMotBienEcrit}{}
+  {}
+  {
+    \ecrire{"*"}
+  }\\
+
+  \procedure {A.afficherAide}{}
+  {{fichierAide : Fichier Texte}\\
+    {chaine : \chaine}}
+  {
+    \sialorssinon{F.fichierExiste(NOM\_FICHIER\_AIDE)} {
+      \instruction{ouvrir(fichierAide, lecture)}
+      \instruction{lireChaine(fichierAide, chaine)}
+      \tantque {non finFichier(fichierAide)} {
+        \ecrire{chaine}
+      }
+      \instruction{fermer(fichierAide)}
+    }
+    {
+      \ecrire{"Le fichier d'aide est introuvable"}
+    }
+  }
+
+\end{algorithme}
+
+\subsection{Procédures privées du main}
+
+\begin{algorithme}
+
+    \procedure {corrigerMot}{\paramEntree{co : CorrecteurOrthographique,
+      posMotFaux : \naturel}}
+  {{correctionsPossibles : Ensemble}\\
+  {temp : ListeChaineeMot}}
+  {
+    \affecter{correctionsPossibles}{ensemble()}
+
+    \sialorssinon {non CO.estBienOrthographie(co)} {
+      \affecter{correctionsPossibles}{CO.proposerCorrections(co)}
+      \instruction{A.afficherCorrectionEtPosMot(correctionsPossibles,
+        CO.obtenirMot(co), posMotFaux)}
+    }
+    {
+      \instruction{A.affichageMotBienEcrit()}
+    }
+    \affecter{temp}{E.obtenirLesElements(correctionsPossibles)}
+    \instruction{liberer(temp)}
+  }\\
+
+  \procedure{mettreMotsDansSDDdico}{(\paramEntree{nomFichierSDDDico :
+      \chaine, fichierTexteMotsAInserer : Fichier Texte}}
+  {{mot : Mot}\\
+    {SDDDico, fils : Dictionnaire}\\
+    {temp : \chaine}\\
+    {longueurMot : \naturel}}
+  {
+    \affecter{SDDDico}{D.creerDico()}
+
+    \sialorssinon {F.fichierExiste(nomFichierSDDDico)} {
+      \affecter{SDDDico}{D.chargerDico(nomFichierSDDDico)}
+      \instruction{AbN.fixerFils(SDDDico, fils)}
+    }
+    {
+      \affecter{fils}{AbN.obtenirFils(SDDDico)}
+    }
+
+    \instruction{ouvrir(fichierTexteMotsAInserer, lecture)}
+
+    \tantque {non finFichier(fichierTexteMotsAInserer)} {
+      \instruction{lireChaine(fichierTexteMotsAInserer, temp)}
+      \affecter{longueurMot}{longueur(temp)}
+      \instruction{M.fixerLongueur(mot, longueurMot)}
+      \instruction{M.fixerLaChaine(mot, temp)}
+
+      \sialors {non D.estPresent(fils, mot)} {
+        \instruction{D.insererMot(fils, mot)}
+      }
+    }
+    \instruction{fermer(fichierTexteMotsAInserer)}
+
+    \instruction{AbN.fixerFils(SDDDico, fils)}
+
+    \instruction{D.sauvegarderDico(nomFichierSDDDico, fils)}
+    \instruction{liberer(fils)}
+    \instruction{liberer(SDDDico)}
+  }
+
+\end{algorithme}

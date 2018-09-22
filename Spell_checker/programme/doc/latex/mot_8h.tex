@@ -1,0 +1,347 @@
+\hypertarget{mot_8h}{}\section{include/mot.h File Reference}
+\label{mot_8h}\index{include/mot.\+h@{include/mot.\+h}}
+
+
+Implantation du T\+AD Mot.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_m___mot}{M\+\_\+\+Mot}
+\begin{DoxyCompactList}\small\item\em Définition du type \hyperlink{struct_m___mot}{M\+\_\+\+Mot} qui est une structure contenant la chaîne de caractères de longueur maximum T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT et la longueur du mot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mot_8h_a6e3eac6a90474b82603a7cbac5f4f628}{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT}~40
+\begin{DoxyCompactList}\small\item\em T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT 40. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{mot_8h_a30bb88d437964ad4cf212ebb7d45ce6c}{M\+\_\+\+Mot}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{mot_8h_a33ff4eb37ed067a505c3fa22d992a225}{M\+\_\+longueur} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne la longueur d\textquotesingle{}un mot calculée avec strlen. \end{DoxyCompactList}\item 
+char \hyperlink{mot_8h_ab4e8137b8a828bf94a25c0741216cc82}{M\+\_\+obtenir\+Ieme\+Caractere} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot, unsigned int pos)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne l\textquotesingle{}ième caractère d\textquotesingle{}un mot. \end{DoxyCompactList}\item 
+void \hyperlink{mot_8h_adf28bb036c06c9b88d6ce38c6407d9b0}{M\+\_\+fixer\+Ieme\+Caractere} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$mot, unsigned int pos, char lettre)
+\item 
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{mot_8h_a377134aac6c6f904bf05eec5e7c0cac5}{M\+\_\+remplacer\+Lettre} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot, unsigned int pos, char lettre)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en remplaçant une lettre par une autre à une position donnée en entrée. \end{DoxyCompactList}\item 
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{mot_8h_a3f44a60950a2d034a7aaca2e87b6ea37}{M\+\_\+inverser\+Deux\+Lettres\+Consecutives} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot, unsigned int pos)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en inversant deux lettres consécutives à une position donnée en entrée. \end{DoxyCompactList}\item 
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{mot_8h_a40a24c50c924f1a3ff6b0490ff12b382}{M\+\_\+supprimer\+Lettre} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot, unsigned int pos)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en supprimant une lettre à une position donnée en entrée. \end{DoxyCompactList}\item 
+\hyperlink{struct_m___mot}{M\+\_\+\+Mot} \hyperlink{mot_8h_ac932d8ea33e4ac4bc1a2d78bf54bda2a}{M\+\_\+inserer\+Lettre} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot, char lettre, unsigned int pos)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en insérant une lettre à une position donnée en entrée. \end{DoxyCompactList}\item 
+void \hyperlink{mot_8h_a58bddeb032a68269e40f921365081ceb}{M\+\_\+obtenir\+Mot\+Entree\+Standard} (int $\ast$pos\+Depuis\+Debut\+Flux, \hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$mot, int $\ast$arret)
+\begin{DoxyCompactList}\small\item\em Obtient le mot suivant (sans séparateur (, ; \+: / ...)) dans l\textquotesingle{}entrée standard. \end{DoxyCompactList}\item 
+void \hyperlink{mot_8h_a7e6e1f05261a9bff0700858020da574d}{M\+\_\+fixer\+La\+Chaine} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$mot, char $\ast$chaine)
+\begin{DoxyCompactList}\small\item\em Permet de fixer le champ la\+Chaine d\textquotesingle{}un mot à partir d\textquotesingle{}une chaine onnée en entrée. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{mot_8h_a45112275fae806c1e00ef0203cef4ef5}{M\+\_\+obtenir\+La\+Chaine} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}obtenir la chaîne de caratères d\textquotesingle{}un mot donné en entrée. \end{DoxyCompactList}\item 
+void \hyperlink{mot_8h_a530a091433dc53eca7fe9de87857bace}{M\+\_\+fixer\+Longueur} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$mot, unsigned int length)
+\begin{DoxyCompactList}\small\item\em Permet de fixer le champ longueur d\textquotesingle{}un mot à partir d\textquotesingle{}un mot et d\textquotesingle{}une longueur donnée en entrée. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{mot_8h_a476805a43ba6f4e53729a21609ec1acf}{M\+\_\+obtenir\+Longueur} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot)
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne la taille de la chaîne de caratères d\textquotesingle{}un mot donné en entrée. \end{DoxyCompactList}\item 
+int \hyperlink{mot_8h_ae6c9089f97d209e91ea6fa7bd2bd7773}{M\+\_\+sont\+Egaux} (\hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot1, \hyperlink{struct_m___mot}{M\+\_\+\+Mot} mot2)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si deux mots donnés en entrée sont égaux. \end{DoxyCompactList}\item 
+int \hyperlink{mot_8h_a5fb5c73dabbe5a7373910a86a80697dd}{M\+\_\+est\+Une\+Lettre} (char c)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si un caractère est une lettre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implantation du T\+AD Mot. 
+
+\begin{DoxyAuthor}{Author}
+B\+O\+U\+T\+A\+Y\+EB Dounia, S\+A\+U\+R\+ON Thibault, S\+E\+S\+B\+OÜÉ Matthias, T\+O\+O\+M\+EY Damien 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+07/12/2017 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mot_8h_a6e3eac6a90474b82603a7cbac5f4f628}\label{mot_8h_a6e3eac6a90474b82603a7cbac5f4f628}} 
+\index{mot.\+h@{mot.\+h}!T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT@{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT}}
+\index{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT@{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT}{TAILLE\_MAX\_MOT}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT~40}
+
+
+
+T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+\_\+\+M\+OT 40. 
+
+Définition d\textquotesingle{}une constante correspondant à la taille max du mot 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{mot_8h_a30bb88d437964ad4cf212ebb7d45ce6c}\label{mot_8h_a30bb88d437964ad4cf212ebb7d45ce6c}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+\+Mot@{M\+\_\+\+Mot}}
+\index{M\+\_\+\+Mot@{M\+\_\+\+Mot}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+\+Mot}{M\_Mot}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_m___mot}{M\+\_\+\+Mot}  \hyperlink{struct_m___mot}{M\+\_\+\+Mot}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{mot_8h_a5fb5c73dabbe5a7373910a86a80697dd}\label{mot_8h_a5fb5c73dabbe5a7373910a86a80697dd}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+est\+Une\+Lettre@{M\+\_\+est\+Une\+Lettre}}
+\index{M\+\_\+est\+Une\+Lettre@{M\+\_\+est\+Une\+Lettre}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+est\+Une\+Lettre()}{M\_estUneLettre()}}
+{\footnotesize\ttfamily int M\+\_\+est\+Une\+Lettre (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si un caractère est une lettre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & caractère qui peut être une lettre ou non \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_adf28bb036c06c9b88d6ce38c6407d9b0}\label{mot_8h_adf28bb036c06c9b88d6ce38c6407d9b0}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+fixer\+Ieme\+Caractere@{M\+\_\+fixer\+Ieme\+Caractere}}
+\index{M\+\_\+fixer\+Ieme\+Caractere@{M\+\_\+fixer\+Ieme\+Caractere}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+fixer\+Ieme\+Caractere()}{M\_fixerIemeCaractere()}}
+{\footnotesize\ttfamily void M\+\_\+fixer\+Ieme\+Caractere (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$}]{mot,  }\item[{unsigned int}]{pos,  }\item[{char}]{lettre }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mot_8h_a7e6e1f05261a9bff0700858020da574d}\label{mot_8h_a7e6e1f05261a9bff0700858020da574d}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+fixer\+La\+Chaine@{M\+\_\+fixer\+La\+Chaine}}
+\index{M\+\_\+fixer\+La\+Chaine@{M\+\_\+fixer\+La\+Chaine}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+fixer\+La\+Chaine()}{M\_fixerLaChaine()}}
+{\footnotesize\ttfamily void M\+\_\+fixer\+La\+Chaine (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$}]{mot,  }\item[{char $\ast$}]{chaine }\end{DoxyParamCaption})}
+
+
+
+Permet de fixer le champ la\+Chaine d\textquotesingle{}un mot à partir d\textquotesingle{}une chaine onnée en entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$mot} & une chaîne de caractères et sa taille \\
+\hline
+{\em $\ast$chaine} & la chaîne de caractères qu\textquotesingle{}on veut stocker dans mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mot_8h_a530a091433dc53eca7fe9de87857bace}\label{mot_8h_a530a091433dc53eca7fe9de87857bace}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+fixer\+Longueur@{M\+\_\+fixer\+Longueur}}
+\index{M\+\_\+fixer\+Longueur@{M\+\_\+fixer\+Longueur}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+fixer\+Longueur()}{M\_fixerLongueur()}}
+{\footnotesize\ttfamily void M\+\_\+fixer\+Longueur (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$}]{mot,  }\item[{unsigned int}]{length }\end{DoxyParamCaption})}
+
+
+
+Permet de fixer le champ longueur d\textquotesingle{}un mot à partir d\textquotesingle{}un mot et d\textquotesingle{}une longueur donnée en entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$mot} & une chaîne de caractères et sa taille \\
+\hline
+{\em length} & la longueur de la chaîne de caractères du mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mot_8h_ac932d8ea33e4ac4bc1a2d78bf54bda2a}\label{mot_8h_ac932d8ea33e4ac4bc1a2d78bf54bda2a}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+inserer\+Lettre@{M\+\_\+inserer\+Lettre}}
+\index{M\+\_\+inserer\+Lettre@{M\+\_\+inserer\+Lettre}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+inserer\+Lettre()}{M\_insererLettre()}}
+{\footnotesize\ttfamily \hyperlink{struct_m___mot}{M\+\_\+\+Mot} M\+\_\+inserer\+Lettre (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot,  }\item[{char}]{lettre,  }\item[{unsigned int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en insérant une lettre à une position donnée en entrée. 
+
+La taille du mot est donc augmentée de 1 
+\begin{DoxyParams}{Parameters}
+{\em mot} & le mot \\
+\hline
+{\em lettre} & la lettre qu\textquotesingle{}on veut insérer \\
+\hline
+{\em pos} & la position du mot à laquelle on veut insérer la lettre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_a3f44a60950a2d034a7aaca2e87b6ea37}\label{mot_8h_a3f44a60950a2d034a7aaca2e87b6ea37}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+inverser\+Deux\+Lettres\+Consecutives@{M\+\_\+inverser\+Deux\+Lettres\+Consecutives}}
+\index{M\+\_\+inverser\+Deux\+Lettres\+Consecutives@{M\+\_\+inverser\+Deux\+Lettres\+Consecutives}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+inverser\+Deux\+Lettres\+Consecutives()}{M\_inverserDeuxLettresConsecutives()}}
+{\footnotesize\ttfamily \hyperlink{struct_m___mot}{M\+\_\+\+Mot} M\+\_\+inverser\+Deux\+Lettres\+Consecutives (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot,  }\item[{unsigned int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en inversant deux lettres consécutives à une position donnée en entrée. 
+
+On inverse la lettre à la position donnée en entrée avec la lettre suivante 
+\begin{DoxyParams}{Parameters}
+{\em mot} & le mot \\
+\hline
+{\em pos} & la position du mot à laquelle on veut inverser la lettre avec la lettre suivante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_a33ff4eb37ed067a505c3fa22d992a225}\label{mot_8h_a33ff4eb37ed067a505c3fa22d992a225}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+longueur@{M\+\_\+longueur}}
+\index{M\+\_\+longueur@{M\+\_\+longueur}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+longueur()}{M\_longueur()}}
+{\footnotesize\ttfamily unsigned int M\+\_\+longueur (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne la longueur d\textquotesingle{}un mot calculée avec strlen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot} & le mot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_ab4e8137b8a828bf94a25c0741216cc82}\label{mot_8h_ab4e8137b8a828bf94a25c0741216cc82}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+obtenir\+Ieme\+Caractere@{M\+\_\+obtenir\+Ieme\+Caractere}}
+\index{M\+\_\+obtenir\+Ieme\+Caractere@{M\+\_\+obtenir\+Ieme\+Caractere}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+obtenir\+Ieme\+Caractere()}{M\_obtenirIemeCaractere()}}
+{\footnotesize\ttfamily char M\+\_\+obtenir\+Ieme\+Caractere (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot,  }\item[{unsigned int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne l\textquotesingle{}ième caractère d\textquotesingle{}un mot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot} & le mot \\
+\hline
+{\em pos} & la position du mot à laquelle on veut accéder (la position 0 étant la premère lettre de la chaîne) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_a45112275fae806c1e00ef0203cef4ef5}\label{mot_8h_a45112275fae806c1e00ef0203cef4ef5}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+obtenir\+La\+Chaine@{M\+\_\+obtenir\+La\+Chaine}}
+\index{M\+\_\+obtenir\+La\+Chaine@{M\+\_\+obtenir\+La\+Chaine}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+obtenir\+La\+Chaine()}{M\_obtenirLaChaine()}}
+{\footnotesize\ttfamily char $\ast$ M\+\_\+obtenir\+La\+Chaine (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}obtenir la chaîne de caratères d\textquotesingle{}un mot donné en entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot} & une chaîne de caractères et sa taille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_a476805a43ba6f4e53729a21609ec1acf}\label{mot_8h_a476805a43ba6f4e53729a21609ec1acf}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+obtenir\+Longueur@{M\+\_\+obtenir\+Longueur}}
+\index{M\+\_\+obtenir\+Longueur@{M\+\_\+obtenir\+Longueur}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+obtenir\+Longueur()}{M\_obtenirLongueur()}}
+{\footnotesize\ttfamily unsigned int M\+\_\+obtenir\+Longueur (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne la taille de la chaîne de caratères d\textquotesingle{}un mot donné en entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot} & une chaîne de caractères et sa taille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int la longueur de la chaîne de caractères du mot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_a58bddeb032a68269e40f921365081ceb}\label{mot_8h_a58bddeb032a68269e40f921365081ceb}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+obtenir\+Mot\+Entree\+Standard@{M\+\_\+obtenir\+Mot\+Entree\+Standard}}
+\index{M\+\_\+obtenir\+Mot\+Entree\+Standard@{M\+\_\+obtenir\+Mot\+Entree\+Standard}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+obtenir\+Mot\+Entree\+Standard()}{M\_obtenirMotEntreeStandard()}}
+{\footnotesize\ttfamily void M\+\_\+obtenir\+Mot\+Entree\+Standard (\begin{DoxyParamCaption}\item[{int $\ast$}]{pos\+Depuis\+Debut\+Flux,  }\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot} $\ast$}]{mot,  }\item[{int $\ast$}]{arret }\end{DoxyParamCaption})}
+
+
+
+Obtient le mot suivant (sans séparateur (, ; \+: / ...)) dans l\textquotesingle{}entrée standard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$pos\+Depuis\+Debut\+Flux} & position du mot de depuis le début du flux d\textquotesingle{}entrée (la position du début de l\textquotesingle{}entrée standard est 0) \\
+\hline
+{\em mot} & mot sans séparateur qu\textquotesingle{}on obtient à partir de l\textquotesingle{}entrée standard \\
+\hline
+{\em $\ast$arret} & booleen qui permet de savoir si on est arrivé à la fin de l\textquotesingle{}entrée standard \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mot_8h_a377134aac6c6f904bf05eec5e7c0cac5}\label{mot_8h_a377134aac6c6f904bf05eec5e7c0cac5}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+remplacer\+Lettre@{M\+\_\+remplacer\+Lettre}}
+\index{M\+\_\+remplacer\+Lettre@{M\+\_\+remplacer\+Lettre}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+remplacer\+Lettre()}{M\_remplacerLettre()}}
+{\footnotesize\ttfamily \hyperlink{struct_m___mot}{M\+\_\+\+Mot} M\+\_\+remplacer\+Lettre (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot,  }\item[{unsigned int}]{pos,  }\item[{char}]{lettre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en remplaçant une lettre par une autre à une position donnée en entrée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot} & le mot \\
+\hline
+{\em pos} & la position du mot à laquelle on remplacer la lettre \\
+\hline
+{\em lettre} & lettre qu\textquotesingle{}on veut mettre à la place d\textquotesingle{}une autre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mot le nouveau mot obtenu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_ae6c9089f97d209e91ea6fa7bd2bd7773}\label{mot_8h_ae6c9089f97d209e91ea6fa7bd2bd7773}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+sont\+Egaux@{M\+\_\+sont\+Egaux}}
+\index{M\+\_\+sont\+Egaux@{M\+\_\+sont\+Egaux}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+sont\+Egaux()}{M\_sontEgaux()}}
+{\footnotesize\ttfamily int M\+\_\+sont\+Egaux (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot1,  }\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot2 }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si deux mots donnés en entrée sont égaux. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot1} & un mot \\
+\hline
+{\em mot2} & un deuxième mot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mot_8h_a40a24c50c924f1a3ff6b0490ff12b382}\label{mot_8h_a40a24c50c924f1a3ff6b0490ff12b382}} 
+\index{mot.\+h@{mot.\+h}!M\+\_\+supprimer\+Lettre@{M\+\_\+supprimer\+Lettre}}
+\index{M\+\_\+supprimer\+Lettre@{M\+\_\+supprimer\+Lettre}!mot.\+h@{mot.\+h}}
+\subsubsection{\texorpdfstring{M\+\_\+supprimer\+Lettre()}{M\_supprimerLettre()}}
+{\footnotesize\ttfamily \hyperlink{struct_m___mot}{M\+\_\+\+Mot} M\+\_\+supprimer\+Lettre (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m___mot}{M\+\_\+\+Mot}}]{mot,  }\item[{unsigned int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne un nouveau mot à partir d\textquotesingle{}un mot initial en supprimant une lettre à une position donnée en entrée. 
+
+La taille du mot est donc réduite de 1 
+\begin{DoxyParams}{Parameters}
+{\em mot} & le mot \\
+\hline
+{\em pos} & la position du mot à laquelle on veut supprimer la lettre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mot 
+\end{DoxyReturn}

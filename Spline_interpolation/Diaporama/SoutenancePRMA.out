@@ -1,0 +1,19 @@
+\BOOKMARK [2][]{Outline0.1}{Introduction}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Point historique}{}% 2
+\BOOKMARK [3][]{Outline0.2.1.4}{Interpolation}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.2.5}{Splines}{Outline0.2}% 4
+\BOOKMARK [2][]{Outline0.3}{Courbes de B\351zier }{}% 5
+\BOOKMARK [3][]{Outline0.3.1.6}{Contexte}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.2.7}{Partie Math\351matiques}{Outline0.3}% 7
+\BOOKMARK [2][]{Outline0.4}{Splines cubiques}{}% 8
+\BOOKMARK [3][]{Outline0.4.1.8}{Exemple de calcul d'une fonction spline cubique}{Outline0.4}% 9
+\BOOKMARK [2][]{Outline0.5}{B-splines}{}% 10
+\BOOKMARK [3][]{Outline0.5.1.17}{Les bases des B-splines}{Outline0.5}% 11
+\BOOKMARK [3][]{Outline0.5.2.18}{Courbe de degr\351 3 \(k=3\)}{Outline0.5}% 12
+\BOOKMARK [2][]{Outline0.6}{Avantages et inconv\351nients}{}% 13
+\BOOKMARK [2][]{Outline0.7}{Exemples de fonctions}{}% 14
+\BOOKMARK [3][]{Outline0.7.1.20}{Fonction de Runge}{Outline0.7}% 15
+\BOOKMARK [3][]{Outline0.7.2.21}{Fonctions Cosinus et Exponentielle}{Outline0.7}% 16
+\BOOKMARK [2][]{Outline0.8}{Applications des splines cubiques}{}% 17
+\BOOKMARK [3][]{Outline0.8.1.22}{Typographie}{Outline0.8}% 18
+\BOOKMARK [3][]{Outline0.8.2.23}{Les autres applications des interpolations par spline}{Outline0.8}% 19

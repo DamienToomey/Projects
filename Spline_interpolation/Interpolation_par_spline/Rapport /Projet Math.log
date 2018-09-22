@@ -1,0 +1,1536 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.8)  30 AUG 2018 15:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Projet Math.tex"
+(./Projet Math.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip46
+\c@subfigure=\count87
+\c@lofdepth=\count88
+\c@subtable=\count89
+\c@lotdepth=\count90
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen107
+\Hy@linkcounter=\count91
+\Hy@pagecounter=\count92
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count93
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count94
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen108
+\Fld@menulength=\count95
+\Field@Width=\dimen109
+\Fld@charsize=\dimen110
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count96
+\c@Item=\count97
+\c@Hfootnote=\count98
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count99
+\c@bookmark@seq@number=\count100
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen111
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count101
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count102
+\leftroot@=\count103
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count104
+\DOTSCASE@=\count105
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count106
+\c@MaxMatrixCols=\count107
+\dotsspace@=\muskip11
+\c@parentequation=\count108
+\dspbrk@lvl=\count109
+\tag@help=\toks16
+\row@=\count110
+\column@=\count111
+\maxfields@=\count112
+\andhelp@=\toks17
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks18
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2017/09/07 v3.24 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
+)))
+
+LaTeX Warning: Command \@footnotemark  has changed.
+               Check if current package is valid.
+
+LaTeX Info: Redefining \textsubscript on input line 1318.
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(./Projet Math.aux)
+\openout1 = `"Projet Math.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen120
+\scratchbox=\box28
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen121
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
+
+(./Projet Math.out) (./Projet Math.out)
+\@outlinefile=\write3
+\openout3 = `"Projet Math.out"'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (72.09941pt too wide) in paragraph at lines 20--20
+ [][] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Projet Math.toc
+[2])
+\tf@toc=\write4
+\openout4 = `"Projet Math.toc"'.
+
+ [3]
+Overfull \hbox (17.71698pt too wide) in paragraph at lines 40--73
+\T1/cmr/m/n/10 - en in-for-ma-tique, une in-ter-po-la-tion per-met l'évaluation
+ de vari-ables ou d'expressions
+ []
+
+[4]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¦ in font cmr10!
+ [5]
+Overfull \hbox (21.96594pt too wide) in paragraph at lines 112--113
+\T1/cmr/m/n/10 Ses pre-mières ap-pli-ca-tions ont prin-ci-pale-ment eu lieu dan
+s le do-maine de l'astronomie.
+ []
+
+
+Overfull \hbox (3.44269pt too wide) in paragraph at lines 112--113
+\T1/cmr/m/n/10 En ef-fet, les as-tronomes Baby-loniens sont réputés pour avoir 
+util-isé l'interpolation
+ []
+
+[6]
+<cuneiform.jpg, id=258, 200.75pt x 192.72pt>
+File: cuneiform.jpg Graphic file (type jpg)
+<use cuneiform.jpg>
+Package pdftex.def Info: cuneiform.jpg  used on input line 116.
+(pdftex.def)             Requested size: 113.81102pt x 109.26045pt.
+
+Overfull \hbox (10.55573pt too wide) in paragraph at lines 120--132
+[]\T1/cmr/m/n/10 En 160 après JC, Claudius Ptolemy, un as-tronome math-é-mati-c
+ien grec d'origine
+ []
+
+
+Overfull \hbox (40.2948pt too wide) in paragraph at lines 120--132
+\T1/cmr/m/n/10 égyp-ti-enne, utilise des ta-bles con-tenant une grande di-ver-s
+ité de fonc-tions trigonométriques
+ []
+
+
+Overfull \hbox (1.53015pt too wide) in paragraph at lines 120--132
+[]\T1/cmr/m/n/10 En l'an 1000, le sci-en-tifique arabe al-Biruni écrit une ÷u-v
+re sur l'interpolation
+ []
+
+[7 <./cuneiform.jpg>]
+Overfull \hbox (15.7478pt too wide) in paragraph at lines 138--145
+[]\T1/cmr/m/n/10 A par-tir de 1711, Isaac New-ton com-mence à pub-lier son tra-
+vail sur l'interpolation
+ []
+
+
+Overfull \hbox (2.193pt too wide) in paragraph at lines 148--164
+\T1/cmr/m/n/10 tion-née par Hou & An-drews qui dé-mon-tre la supéri-or-ité ab-s
+olue de l'interpolation
+ []
+
+[8] [9]
+Overfull \hbox (0.55817pt too wide) in paragraph at lines 181--189
+[]\T1/cmr/m/n/10 En 1946, Isaac Schoen-berg est le pre-mier a util-isé ce terme
+ dans ses recherches
+ []
+
+<ducks.jpg, id=273, 211.79124pt x 426.59375pt>
+File: ducks.jpg Graphic file (type jpg)
+<use ducks.jpg>
+Package pdftex.def Info: ducks.jpg  used on input line 192.
+(pdftex.def)             Requested size: 85.35826pt x 171.92981pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10] [11 <./ducks.jpg>]
+Overfull \hbox (13.02832pt too wide) in paragraph at lines 212--219
+\T1/cmr/m/n/10 of-frent générale-ment le meilleur com-pro-mis coûts-performance
+s. Grâce à l'évolution
+ []
+
+[12]
+Overfull \hbox (14.27704pt too wide) in paragraph at lines 224--230
+[]\T1/cmr/m/n/10 Diplômé de l'école Na-tionale Supérieure d'Arts et Métiers et 
+de l'école supérieure
+ []
+
+<Bezier.jpg, id=287, 65.043pt x 74.07675pt>
+File: Bezier.jpg Graphic file (type jpg)
+<use Bezier.jpg>
+Package pdftex.def Info: Bezier.jpg  used on input line 233.
+(pdftex.def)             Requested size: 113.81102pt x 129.62494pt.
+[13 <./Bezier.jpg>]
+<renault_4.jpg, id=294, 642.4pt x 406.51875pt>
+File: renault_4.jpg Graphic file (type jpg)
+<use renault_4.jpg>
+Package pdftex.def Info: renault_4.jpg  used on input line 242.
+(pdftex.def)             Requested size: 170.71652pt x 108.0309pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--256
+
+ []
+
+[14 <./renault_4.jpg>] [15]
+Overfull \hbox (2.51093pt too wide) in paragraph at lines 269--270
+[]\T1/cmr/m/n/10 On con-sid-ère $\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 + 1$ \T1/cm
+r/m/n/10 points du plan ($\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/
+10 1$\T1/cmr/m/n/10 , le plus sou-vent $\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 = 3$
+\T1/cmr/m/n/10 ), $\OML/cmm/m/it/10 A[]; A[]; :::; A[]$
+ []
+
+Missing character: There is no Â in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no · in font cmr10!
+[16]
+Overfull \hbox (26.4603pt too wide) in paragraph at lines 348--350
+\OML/cmm/m/it/10 P[]$ \T1/cmr/m/n/10 dont les points de con-trôles sont re-spec
+-tive-ment ($\OML/cmm/m/it/10 L[]; L[]; L[]; L[]$\T1/cmr/m/n/10 ) et ($\OML/cmm
+/m/it/10 R[]; R[]; R[]; R[]$\T1/cmr/m/n/10 ): 
+ []
+
+[17]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [18]
+Overfull \hbox (5.0293pt too wide) in paragraph at lines 435--438
+[]\T1/cmr/m/n/10 Ce sont les courbes de Bézier qui sont les plus util-isées en 
+con-cep-tion graphique
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+[19] [20] [21]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ³ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ² in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
+
+ []
+
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 573--577
+
+ []
+
+
+Overfull \hbox (36.90517pt too wide) detected at line 581
+[]
+ []
+
+
+Overfull \hbox (55.93233pt too wide) detected at line 598
+[]
+ []
+
+
+Overfull \hbox (109.33308pt too wide) detected at line 612
+[]
+ []
+
+[24]
+Overfull \hbox (10.23915pt too wide) detected at line 617
+\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OML
+/cmm/m/it/10 f[][] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 f[][] \OT1/cmr/m/n/10 + \
+OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \
+OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 b[]\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OML/c
+mm/m/it/10 i \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/
+it/10 ; :::; n \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1
+ []
+
+
+Overfull \hbox (22.55031pt too wide) detected at line 618
+\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OML
+/cmm/m/it/10 f[][] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 f[][] \OT1/cmr/m/n/10 + (
+[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 f[][]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/1
+0 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + ([] \OMS/cmsy/
+m/n/10 ^^@ \OML/cmm/m/it/10 f[][]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 x \OMS/cmsy
+/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (63.87265pt too wide) detected at line 619
+\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OML
+/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \
+OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (
+\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )) 
++ [](\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x\OT1/cmr/m/n/1
+0 ) + [](\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OT1/cmr/m
+/n/10 )
+ []
+
+[25]
+Overfull \hbox (7.60356pt too wide) detected at line 650
+[]
+ []
+
+
+Overfull \hbox (21.67863pt too wide) detected at line 665
+[]
+ []
+
+[26]
+Overfull \hbox (4.07358pt too wide) detected at line 700
+[] [] \OT1/cmr/m/n/10 = []
+ []
+
+
+Overfull \hbox (4.07358pt too wide) detected at line 724
+[] [] \OT1/cmr/m/n/10 = []
+ []
+
+[27]
+Overfull \hbox (10.25237pt too wide) detected at line 767
+[] [] \OT1/cmr/m/n/10 = []
+ []
+
+[28]
+Overfull \hbox (141.41898pt too wide) detected at line 836
+\OML/cmm/m/it/10 LU \OT1/cmr/m/n/10 = [] [] = []
+ []
+
+
+Overfull \hbox (31.01956pt too wide) detected at line 852
+\OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 ;  \
+OML/cmm/m/it/10 []^^L[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[] \OMS/cmsy/m/n/1
+0 , \OML/cmm/m/it/10 ^^L[] \OT1/cmr/m/n/10 = [];  \OML/cmm/m/it/10 w[]^^L[] \OT
+1/cmr/m/n/10 + \OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 s[] \OMS
+/cmsy/m/n/10 , \OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 s[] \OMS
+/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^L[]w[] i \OT1/cmr/m/n/10 = 2\OML/cmm/m/it/1
+0 ; :::; n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--854
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 856--858
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 885--889
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--926
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 956--960
+
+ []
+
+[31]
+Overfull \hbox (93.3374pt too wide) in paragraph at lines 1013--1014
+ []$[]$
+ []
+
+
+Overfull \hbox (119.73123pt too wide) detected at line 1041
+\OT1/cmr/m/n/10 (1)  \OMS/cmsy/m/n/10 ,  [] , [] , [] , []
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1072
+
+ []
+
+
+Overfull \hbox (29.2786pt too wide) detected at line 1094
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = [] = []  \OML/cmm/m/it/10 L \OT1/cmr/m/n/1
+0 = []  \OML/cmm/m/it/10 U \OT1/cmr/m/n/10 = []
+ []
+
+[33] [34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 1250--1252
+
+ []
+
+
+Overfull \hbox (88.03342pt too wide) detected at line 1257
+\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OML
+/cmm/m/it/10 f[][] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 f[][] \OT1/cmr/m/n/10 + \
+OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \
+OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 b[]\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OML/c
+mm/m/it/10 i \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/
+it/10 ; :::; n \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1  \OML/cmm/m/it/10 et  h[]
+ \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x
+[]
+ []
+
+[36]
+Overfull \hbox (9.63478pt too wide) detected at line 1308
+[]
+ []
+
+
+Overfull \hbox (1.85698pt too wide) detected at line 1323
+[]
+ []
+
+[37]
+<ExempleInterpolationGeogebra.png, id=405, 636.3775pt x 596.2275pt>
+File: ExempleInterpolationGeogebra.png Graphic file (type png)
+<use ExempleInterpolationGeogebra.png>
+Package pdftex.def Info: ExempleInterpolationGeogebra.png  used on input line 1
+349.
+(pdftex.def)             Requested size: 241.84842pt x 226.58699pt.
+ [38 <./ExempleInterpolationGeogebra.png>] [39]
+<Analyse-Descendante-Spline-Cubique.png, id=415, 1273.75874pt x 903.375pt>
+File: Analyse-Descendante-Spline-Cubique.png Graphic file (type png)
+<use Analyse-Descendante-Spline-Cubique.png>
+Package pdftex.def Info: Analyse-Descendante-Spline-Cubique.png  used on input 
+line 1364.
+(pdftex.def)             Requested size: 569.05511pt x 403.57892pt.
+
+Overfull \hbox (19.05511pt too wide) in paragraph at lines 1364--1365
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 82.52289pt on input line 1366.
+
+[40 <./Analyse-Descendante-Spline-Cubique.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1374--1376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1377--1379
+
+ []
+
+
+Overfull \hbox (0.33792pt too wide) in paragraph at lines 1380--1382
+[]\T1/cmr/m/it/10 Procedure ini-tial-i-sa-tion (Var don-neesAu-Point : tableauD
+-e-Qua-tre-Colonnes;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1380--1382
+
+ []
+
+
+Overfull \hbox (18.25565pt too wide) in paragraph at lines 1383--1385
+[]\T1/cmr/m/it/10 Procedure en-tr-erLesValeurs (Var don-neesAu-Point : tableauD
+-e-Qua-tre-Colonnes;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1383--1385
+
+ []
+
+
+Overfull \hbox (22.56573pt too wide) in paragraph at lines 1386--1388
+[]\T1/cmr/m/it/10 Procedure af-fichageRe-sul-tat-Fi-nal (don-neesAu-Point : tab
+leauD-e-Qua-tre-Colonnes;
+ []
+
+
+Overfull \hbox (11.44818pt too wide) in paragraph at lines 1386--1388
+\T1/cmr/m/it/10 nom-bre-Point : In-te-ger; don-neesEn-tre-Deux-Points : tableau
+De-Trois-Colonnes); 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1391
+
+ []
+
+
+Overfull \hbox (2.55786pt too wide) in paragraph at lines 1392--1394
+\T1/cmr/m/it/10 Qua-tre-Colonnes; don-nesEn-tre-Deux-Points : tableauDe-Trois-C
+olonnes; nom-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1392--1394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1397
+
+ []
+
+[41
+
+
+]
+Overfull \hbox (19.22655pt too wide) in paragraph at lines 1399--1401
+[]\T1/cmr/m/it/10 Procedure rem-plis-sage-Ma-triceARe-duite (Var ma-triceA,matr
+iceAR : tableauNN;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
+
+ []
+
+
+Overfull \hbox (18.70189pt too wide) in paragraph at lines 1402--1404
+\T1/cmr/m/it/10 neesAu-Point : tableauD-e-Qua-tre-Colonnes; don-neesEn-tre-Le-s
+-Points : tableauDe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1404
+
+ []
+
+
+Overfull \hbox (8.33762pt too wide) in paragraph at lines 1405--1407
+[]\T1/cmr/m/it/10 Procedure rem-plis-sage-Ma-trice-GRe-duite (Var ma-triceG, ma
+-triceGR : tableau-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1407
+
+ []
+
+
+Overfull \hbox (30.02501pt too wide) in paragraph at lines 1408--1410
+[]\T1/cmr/m/it/10 Procedure rem-plis-sageEt-Cal-cul-Sim-ple (Var don-neesEn-tre
+-Deux-Points : tableauDe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1410
+
+ []
+
+
+Overfull \hbox (11.08714pt too wide) in paragraph at lines 1411--1413
+\T1/cmr/m/it/10 bre-Point : In-te-ger; Var don-neesEn-tre-Deux-Points : tableau
+De-Trois-Colonnes); 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
+
+ []
+
+
+Overfull \hbox (11.08714pt too wide) in paragraph at lines 1414--1416
+\T1/cmr/m/it/10 bre-Point : In-te-ger; Var don-neesEn-tre-Deux-Points : tableau
+De-Trois-Colonnes); 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1414--1416
+
+ []
+
+
+Overfull \hbox (15.1453pt too wide) in paragraph at lines 1417--1419
+[]\T1/cmr/m/it/10 Procedure cal-culDe-sCon-stantes (don-neesAu-Point : tableauD
+-e-Qua-tre-Colonnes;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1419
+
+ []
+
+
+Overfull \hbox (15.03499pt too wide) in paragraph at lines 1423--1425
+[]\T1/cmr/m/it/10 Procedure cal-culDe-Ma-triceY (Var ma-triceY, ma-triceGR : ta
+bleau-Une-Colonne;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1423--1425
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1433
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1458
+
+ []
+
+
+Overfull \hbox (3.08423pt too wide) in paragraph at lines 1439--1458
+[]\T1/cmr/m/n/10 Les B-splines ra-tionnelles non-uniformes, ou NURBS de leur ac
+ronyme anglais
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1477
+
+ []
+
+[45] [46]
+<Courbe-B-splines.jpg, id=446, 957.5775pt x 545.03625pt>
+File: Courbe-B-splines.jpg Graphic file (type jpg)
+<use Courbe-B-splines.jpg>
+Package pdftex.def Info: Courbe-B-splines.jpg  used on input line 1519.
+(pdftex.def)             Requested size: 312.9803pt x 178.14099pt.
+ [47 <./Courbe-B-splines.jpg>] [48]
+<Analyse-Descendante-bspline.png, id=457, 1358.07375pt x 830.10126pt>
+File: Analyse-Descendante-bspline.png Graphic file (type png)
+<use Analyse-Descendante-bspline.png>
+Package pdftex.def Info: Analyse-Descendante-bspline.png  used on input line 15
+78.
+(pdftex.def)             Requested size: 426.79134pt x 260.86263pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 1578--1579
+ [][] 
+ []
+
+[49 <./Analyse-Descendante-bspline.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1602
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 1616--1624
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1616--1624
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1633--1637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1633--1637
+
+ []
+
+[51] [52]
+<TableauDeValeurs.png, id=478, 664.4825pt x 70.2625pt>
+File: TableauDeValeurs.png Graphic file (type png)
+<use TableauDeValeurs.png>
+Package pdftex.def Info: TableauDeValeurs.png  used on input line 1661.
+(pdftex.def)             Requested size: 227.62204pt x 24.06903pt.
+<CourbeFonctionRunge.png, id=479, 616.3025pt x 359.3425pt>
+File: CourbeFonctionRunge.png Graphic file (type png)
+<use CourbeFonctionRunge.png>
+Package pdftex.def Info: CourbeFonctionRunge.png  used on input line 1669.
+(pdftex.def)             Requested size: 284.52756pt x 165.8972pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53 <./TableauDeValeurs.png>]
+<InterpolationRungeSplineCubique.png, id=485, 1346.02875pt x 667.49374pt>
+File: InterpolationRungeSplineCubique.png Graphic file (type png)
+<use InterpolationRungeSplineCubique.png>
+Package pdftex.def Info: InterpolationRungeSplineCubique.png  used on input lin
+e 1680.
+(pdftex.def)             Requested size: 341.43306pt x 169.31746pt.
+ [54 <./CourbeFonctionRunge.png> <./InterpolationRungeSplineCubique.png>]
+<ExempleFctRunge.png, id=492, 488.57532pt x 237.13594pt>
+File: ExempleFctRunge.png Graphic file (type png)
+<use ExempleFctRunge.png>
+Package pdftex.def Info: ExempleFctRunge.png  used on input line 1691.
+(pdftex.def)             Requested size: 341.43306pt x 165.71901pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1695--1696
+
+ []
+
+[55 <./ExempleFctRunge.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1700--1702
+
+ []
+
+<FonctionCosinus.jpg, id=500, 1385.175pt x 825.0825pt>
+File: FonctionCosinus.jpg Graphic file (type jpg)
+<use FonctionCosinus.jpg>
+Package pdftex.def Info: FonctionCosinus.jpg  used on input line 1720.
+(pdftex.def)             Requested size: 227.62204pt x 135.57878pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1724--1726
+
+ []
+
+[56 <./FonctionCosinus.jpg>]
+Overfull \hbox (26.15936pt too wide) in paragraph at lines 1731--1733
+\T1/cmr/m/n/10 cette fonc-tion avec Open Of-fice Ex-cel sur l'intervalle [-1;3]
+, sans utiliser d'interpolation. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1731--1733
+
+ []
+
+<FctExpExcel.png, id=506, 455.45157pt x 255.95625pt>
+File: FctExpExcel.png Graphic file (type png)
+<use FctExpExcel.png>
+Package pdftex.def Info: FctExpExcel.png  used on input line 1751.
+(pdftex.def)             Requested size: 341.43306pt x 191.88469pt.
+<FonctionExponentielle.png, id=507, 457.71pt x 644.4075pt>
+File: FonctionExponentielle.png Graphic file (type png)
+<use FonctionExponentielle.png>
+Package pdftex.def Info: FonctionExponentielle.png  used on input line 1760.
+(pdftex.def)             Requested size: 142.26378pt x 200.2854pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[57 <./FctExpExcel.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1768--1769
+
+ []
+
+[58 <./FonctionExponentielle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1776--1779
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1776--1779
+
+ []
+
+[59]
+Overfull \hbox (0.98065pt too wide) in paragraph at lines 1782--1782
+[]\T1/cmr/bx/n/12 Les splines dans la ty-pogra-phie et les logi-ciels de dessin
+ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1785--1786
+
+ []
+
+<Typographie.png, id=523, 370.38374pt x 141.52875pt>
+File: Typographie.png Graphic file (type png)
+<use Typographie.png>
+Package pdftex.def Info: Typographie.png  used on input line 1791.
+(pdftex.def)             Requested size: 170.71652pt x 65.23358pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1795--1796
+
+ []
+
+[60 <./Typographie.png>]
+<ClefSol.png, id=530, 159.59625pt x 337.26pt>
+File: ClefSol.png Graphic file (type png)
+<use ClefSol.png>
+Package pdftex.def Info: ClefSol.png  used on input line 1803.
+(pdftex.def)             Requested size: 85.35826pt x 180.37828pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1807--1808
+
+ []
+
+[61 <./ClefSol.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1816--1817
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1816--1817
+
+ []
+
+<SplineTransport.png, id=538, 405.515pt x 405.515pt>
+File: SplineTransport.png Graphic file (type png)
+<use SplineTransport.png>
+Package pdftex.def Info: SplineTransport.png  used on input line 1820.
+(pdftex.def)             Requested size: 170.71652pt x 170.71733pt.
+
+Overfull \hbox (1.22357pt too wide) in paragraph at lines 1830--1831
+[]\T1/cmr/m/n/10 Comme le dit CJC Kruger de la so-ciété d'hydrauliques Korf, ^^
+S L'interpolation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1831
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1831
+
+ []
+
+[62 <./SplineTransport.png>]
+<SplineChimie.png, id=544, 920.43875pt x 435.6275pt>
+File: SplineChimie.png Graphic file (type png)
+<use SplineChimie.png>
+Package pdftex.def Info: SplineChimie.png  used on input line 1834.
+(pdftex.def)             Requested size: 341.43306pt x 161.59842pt.
+
+Overfull \hbox (31.5506pt too wide) in paragraph at lines 1838--1839
+[]\T1/cmr/m/n/10 Les deux graphiques ci-dessus mon-trent les courbes obtenues à
+ travers l'interpolation
+ []
+
+[63 <./SplineChimie.png>] [64]
+<TajMahal.jpeg, id=554, 2890.8pt x 1626.075pt>
+File: TajMahal.jpeg Graphic file (type jpg)
+<use TajMahal.jpeg>
+Package pdftex.def Info: TajMahal.jpeg  used on input line 1858.
+(pdftex.def)             Requested size: 284.52756pt x 160.03659pt.
+<GeogebraTajMahal.JPG, id=555, 1028.34187pt x 548.0475pt>
+File: GeogebraTajMahal.JPG Graphic file (type jpg)
+<use GeogebraTajMahal.JPG>
+Package pdftex.def Info: GeogebraTajMahal.JPG  used on input line 1864.
+(pdftex.def)             Requested size: 284.52756pt x 151.63757pt.
+ [65 <./TajMahal.jpeg> <./GeogebraTajMahal.JPG>]
+[66]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1891
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Overfull \hbox (2.4707pt too wide) in paragraph at lines 1889--1965
+\T1/cmr/m/n/10 Source : []$\T1/cmtt/m/n/10 http : / / www . duckworksmagazine .
+ com / 03 / r / articles / splineducks /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Overfull \hbox (2.46376pt too wide) in paragraph at lines 1889--1965
+\T1/cmr/bx/n/10 Figure 14 \T1/cmr/m/n/10 - Représen-ta-tion graphique de la fon
+c-tion ex-po-nen-tielle sur l'intervalle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Overfull \hbox (3.9707pt too wide) in paragraph at lines 1889--1965
+\T1/cmr/m/n/10 Source : []$\T1/cmtt/m/n/10 http : / / www . boeingimages . com 
+/ archive / Engineer-[]Drafting-[]with-[]$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+
+Overfull \hbox (2.4707pt too wide) in paragraph at lines 1889--1965
+\T1/cmr/m/n/10 Source : []$\T1/cmtt/m/n/10 http : / / img0 . svstatic . com / w
+allpapers / 7516c8b89bf97f0219f074a$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1965
+
+ []
+
+[67] [68]
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Overfull \hbox (2.4154pt too wide) in paragraph at lines 1969--2053
+[][]$\T1/cmtt/m/n/10 http : / / www-[]groups . dcs . st-[]and . ac . uk / histo
+ry / Biographies / Schoenberg .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Overfull \hbox (22.77142pt too wide) in paragraph at lines 1969--2053
+[][]$\T1/cmtt/m/n/10 https : / / www . math . u-[]bordeaux . fr / ~pfischer / T
+eaching _ files / cours . pdf$[][] \T1/cmr/m/n/10 (page
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Overfull \hbox (2.4154pt too wide) in paragraph at lines 1969--2053
+[][]$\T1/cmtt/m/n/10 http : / / perso . univ-[]lyon1 . fr / jean-[]claude . ieh
+l / Public / educ / ENS / chap6 _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Overfull \hbox (1.4154pt too wide) in paragraph at lines 1969--2053
+[][]$\T1/cmtt/m/n/10 http : / / www . giref . ulaval . ca / ~afortin / mat17442
+ / documents / splines . pdf$[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Overfull \hbox (102.14105pt too wide) in paragraph at lines 1969--2053
+[][]$\T1/cmtt/m/n/10 http : / / homepages . ulb . ac . be / ~majansen / teachin
+g / INFO-[]F-[]205 / diapositives05interpolation _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Overfull \hbox (11.91284pt too wide) in paragraph at lines 1969--2053
+[][]$\T1/cmtt/m/n/10 http : / / johan . mathieu . free . fr / maths / doc _ mat
+hs / oral _ 1 _ capes / phenomene _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+
+Overfull \hbox (7.16412pt too wide) in paragraph at lines 1969--2053
+[][]$\T1/cmtt/m/n/10 http : / / w3 . bretagne . ens-[]cachan . fr / math / peop
+le / gregory . vial / files / cs /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--2053
+
+ []
+
+[69]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2054.
+ [70]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2054.
+ (./Projet Math.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2054.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2054.
+
+Package rerunfilecheck Info: File `"Projet Math".out' has not changed.
+(rerunfilecheck)             Checksum: F61D561E92F596521288E903BE7C3D4D;3180.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2054.
+ ) 
+Here is how much of TeX's memory you used:
+ 7301 strings out of 494853
+ 106468 string characters out of 6178459
+ 212299 words of memory out of 5000000
+ 10378 multiletter control sequences out of 15000+600000
+ 18679 words of font info for 52 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 33i,16n,29p,1480b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.60
+0pk> </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.
+600pk> </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx120
+0.600pk> </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1
+000.600pk> </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
+x1440.600pk> </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm1000.600pk> </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecrm1200.600pk> </home/damien/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on "Projet Math.pdf" (70 pages, 6574616 bytes).
+PDF statistics:
+ 1141 PDF objects out of 1200 (max. 8388607)
+ 611 compressed objects within 7 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
+
