@@ -10,4 +10,4 @@ Répertoires :
 
 Pour lire et exécuter le code Python, utilisez jupyter-notebook.
 
-##### Amélioration du projet : faire de la stéganalyse sur les images dans lesquelles on a caché un message
+##### Amélioration possible du projet : faire de la stéganalyse sur les images dans lesquelles on a caché un message
