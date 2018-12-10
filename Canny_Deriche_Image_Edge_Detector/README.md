@@ -14,4 +14,4 @@ Répertoires :
 
 Pour lire et exécuter le code Python, utilisez jupyter-notebook.
 
-##### Amélioration du projet : comparer les résultats avec le filtre de Canny
+##### Amélioration possible du projet : comparer les résultats avec le filtre de Canny
