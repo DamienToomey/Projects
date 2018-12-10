@@ -13,3 +13,5 @@ Répertoires :
 - Diaporama : contient le diaporama de la soutenance (fichier diaporama.pdf)
 
 Pour lire et exécuter le code Python, utilisez jupyter-notebook.
+
+##### Amélioration du projet : comparer les résultats avec le filtre de Canny
