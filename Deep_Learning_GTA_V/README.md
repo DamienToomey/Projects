@@ -195,6 +195,7 @@ doi = {10.1109/ICCV.2017.243},
 - https://github.com/NVIDIA/pix2pixHD/issues/19
 - https://github.com/NVIDIA/pix2pixHD/issues/44
 <br />
+
 - In pix2pixHD/models/pix2pixHD_model.py, replace:
 
 ```
