@@ -1,6 +1,6 @@
 ## Deep Learning & GTA V
 
-The goal of the project is to see if synthetic images car be used to train detection neural networks with the aim of reducing the cumbersome task of labelling.
+The goal of the project is to see if synthetic images can be used to train neural networks for object detection with the aim of reducing the cumbersome task of labelling.
 
 This project is divided into two parts :
 - Part 1 : Generation of the synthetic dataset
