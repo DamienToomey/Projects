@@ -196,6 +196,7 @@ doi = {10.1109/ICCV.2017.243},
 - https://github.com/NVIDIA/pix2pixHD/issues/44
 <br />
 - In pix2pixHD/models/pix2pixHD_model.py, replace:
+
 ```
 if torch.__version__.startswith('0.4'):
     with torch.no_grad():
@@ -204,7 +205,8 @@ if torch.__version__.startswith('0.4'):
         fake_image = self.netG.forward(input_concat)
 ```
 
-- with that (make sure to respect the indentation):
+- with the following code (make sure to respect the indentation):
+
 ```
 with torch.no_grad():
     fake_image = self.netG.forward(input_concat)
@@ -212,6 +214,7 @@ with torch.no_grad():
 
 ##### ~/Desktop/pix2pixHD/models/pix2pixHD_model.py:130: UserWarning: volatile was removed and now has no effect. Use 'with torch.no_grad():' instead.
 - In pix2pixHD/models/pix2pixHD_model.py, remove:
+
 ```
 input_label = Variable(input_label, volatile=infer)
 ```
