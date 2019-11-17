@@ -4,7 +4,7 @@ The goal of the project is to see if synthetic images can be used to train neura
 
 This project is divided into two parts :
 - Part 1 : Generation of the synthetic dataset
-- Part 2 : Training of detection models with the synthetic dataset and other experiments
+- Part 2 : Training of object detection models with the synthetic dataset and other experiments
 
 ## Part 1 : Generation of the synthetic dataset
 
@@ -144,12 +144,11 @@ Playing for Benchmarks' dataset is not compatible with Cityscapes. We had to con
 
 We used the training set and validation set from Playing for Benchmarks to create a unique set composed of 10000 Cityscapes compatible SLMs and 10000 corresponding IMs.
 
-## Part 2  : Training of detection models with the synthetic dataset and other experiments
-
+## Part 2  : Training of object detection models with the synthetic dataset and other experiments
 
 Part 2 of this project was conducted by Benjamin Deguerre, PhD student at INSA Rouen.
 
-The article for which I am a co-author will be published soon.
+His article, for which I am a co-author, will be published soon.
 
 ---
 
