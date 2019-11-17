@@ -8,7 +8,7 @@ This project is divided into two parts :
 
 ## Part 1 : Generation of the synthetic dataset
 
-The focus of this part is to synthesize high resolution photorealistic images from the [GTA V video game](https://www.rockstargames.com/V/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2FV%2F&options=&locale=en_us) with Deep Learning.
+The focus of this part is to synthesize high-resolution photorealistic images from the [GTA V video game](https://www.rockstargames.com/V/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2FV%2F&options=&locale=en_us) with Deep Learning.
 
 Part 1 is divided into studies that show the different steps that lead us to our results.  
 
