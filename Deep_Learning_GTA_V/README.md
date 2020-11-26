@@ -148,8 +148,6 @@ We used the training set and validation set from Playing for Benchmarks to creat
 
 Part 2 of this project was conducted by Benjamin Deguerre, PhD student at INSA Rouen.
 
-His article, for which I am a co-author, will be published soon.
-
 ---
 
 #### References
